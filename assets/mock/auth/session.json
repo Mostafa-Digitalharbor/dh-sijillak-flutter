@@ -1,0 +1,15 @@
+{
+  "data": {
+    "user": {
+      "id": "user-1",
+      "name": "محمد العتيبي",
+      "email": "owner@alnokhba.sa"
+    },
+    "workspace": {
+      "id": "workspace-1",
+      "name": "شركة النخبة التجارية",
+      "handle": "alnokhba",
+      "url": "alnokhba.sijillak.com"
+    }
+  }
+}

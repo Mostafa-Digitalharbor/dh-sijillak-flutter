@@ -1,0 +1,26 @@
+{
+  "ar": {
+    "settingsTitle": "الحساب",
+    "settingsOpenAccount": "فتح الحساب والإعدادات",
+    "settingsWorkspace": "مساحة العمل",
+    "settingsWorkspaceUrl": "رابط المساحة",
+    "settingsLanguage": "اللغة",
+    "settingsSignOut": "تسجيل الخروج",
+    "settingsSignOutTitle": "تسجيل الخروج؟",
+    "settingsSignOutBody": "ستحتاج إلى تسجيل الدخول من جديد للوصول إلى مساحة عملك.",
+    "settingsSignOutConfirm": "تسجيل الخروج",
+    "settingsCancel": "إلغاء"
+  },
+  "en": {
+    "settingsTitle": "Account",
+    "settingsOpenAccount": "Open account and settings",
+    "settingsWorkspace": "Workspace",
+    "settingsWorkspaceUrl": "Workspace link",
+    "settingsLanguage": "Language",
+    "settingsSignOut": "Sign out",
+    "settingsSignOutTitle": "Sign out?",
+    "settingsSignOutBody": "You will need to sign in again to reach your workspace.",
+    "settingsSignOutConfirm": "Sign out",
+    "settingsCancel": "Cancel"
+  }
+}

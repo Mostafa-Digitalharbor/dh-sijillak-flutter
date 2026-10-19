@@ -1,0 +1,19 @@
+{
+  "data": {
+    "customer": "مؤسسة التوريدات المتحدة",
+    "vatNumber": "310000000000003",
+    "paymentTermsDays": 15,
+    "lines": [
+      {
+        "name": "توريد معدات تعبئة",
+        "unitPrice": 10000,
+        "quantity": 1
+      },
+      {
+        "name": "خدمة التركيب والتشغيل",
+        "unitPrice": 2500,
+        "quantity": 1
+      }
+    ]
+  }
+}

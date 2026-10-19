@@ -1,0 +1,671 @@
+{
+  "@@locale": "en",
+  "appName": "Sijilak",
+  "navHome": "Home",
+  "navPipeline": "Deals",
+  "navCustomers": "Customers",
+  "invoices": "Invoices",
+  "createNew": "Create new",
+  "loginTitle": "Welcome back",
+  "loginSubtitle": "Sign in to your company workspace",
+  "email": "Email",
+  "password": "Password",
+  "forgotPassword": "Forgot password?",
+  "signIn": "Sign in",
+  "signInFaceId": "Sign in with Face ID",
+  "fatooraCompliant": "Compliant with “Fatoora” e-invoicing",
+  "noAccountPrompt": "Your company doesn't have an account? ",
+  "signUpFree": "Sign up free",
+  "accountTitle": "Workspace admin account",
+  "accountSubtitle": "You'll be able to add your team later",
+  "sendOtp": "Send verification code",
+  "fullName": "Full name",
+  "fullNameHint": "First and last name",
+  "workEmail": "Work email",
+  "mobileNumber": "Mobile number",
+  "strengthWeak": "Weak",
+  "strengthMedium": "Medium",
+  "strengthStrong": "Strong",
+  "passwordHint": "At least 8 characters",
+  "agreeTo": "I agree to the ",
+  "termsOfUse": "Terms of Use",
+  "andJoiner": " and ",
+  "privacyPolicy": "Privacy Policy",
+  "companyLogo": "Your company logo",
+  "logoSubtitle": "Shown on your team’s sign-in page and on invoices",
+  "createWorkspace": "Create workspace",
+  "skip": "Skip",
+  "loginPreview": "Sign-in page preview",
+  "uploadedTapToChange": "Uploaded — tap to change",
+  "uploadLogo": "Upload logo",
+  "logoRequirements": "Light-background image, up to 2 MB",
+  "sectorTrade": "Trade & distribution",
+  "sectorIndustry": "Manufacturing",
+  "sectorServices": "Services",
+  "sectorContracting": "Contracting",
+  "sectorOther": "Other",
+  "companyTitle": "Tell us about your company",
+  "companySubtitle": "And choose its workspace link",
+  "continueLabel": "Continue",
+  "companyName": "Company name",
+  "companyNameHint": "Name as in the commercial register",
+  "companySector": "Company sector",
+  "workspaceLink": "Company workspace link",
+  "linkAvailable": "Link is available",
+  "linkTaken": "This link is taken, try another name",
+  "linkRules": "Lowercase English letters and numbers only",
+  "teamWillSignInVia": "Your team will sign in via",
+  "enterWorkspace": "Enter workspace",
+  "inviteTeam": "Invite team members",
+  "workspaceReady": "Your company workspace is ready",
+  "shareLinkWithTeam": "Share the link with your team so they can start",
+  "linkCopied": "Link copied",
+  "copy": "Copy",
+  "startInThreeSteps": "Get started in three steps",
+  "addFirstCustomer": "Add your first customer",
+  "addProducts": "Add your products and services",
+  "issueFirstInvoice": "Issue your first invoice",
+  "verifyAndContinue": "Verify and continue",
+  "otpTitle": "Enter the verification code",
+  "otpSubtitle": "We sent a 6-digit code to your mobile",
+  "edit": "Edit",
+  "verificationCode": "Verification code",
+  "resendCode": "Resend code",
+  "resendIn": "Resend in ",
+  "delete": "Delete",
+  "cityRiyadh": "Riyadh",
+  "cityJeddah": "Jeddah",
+  "cityDammam": "Dammam",
+  "cityMakkah": "Makkah",
+  "cityMadinah": "Madinah",
+  "taxTitle": "Tax information",
+  "taxSubtitle": "Shown on your invoices and required to connect to “Fatoora”",
+  "later": "Later",
+  "commercialRegNo": "Commercial registration no.",
+  "digits10": "10 digits",
+  "vatNumber": "VAT number",
+  "vatNumberHint": "15 digits, starting and ending with 3",
+  "nationalAddress": "National address",
+  "postalCode": "Postal code",
+  "digits5": "5 digits",
+  "addressHint": "District, street, building no.",
+  "city": "City",
+  "fatooraLinkSemantic": "Connect to the Fatoora platform",
+  "fatooraLink": "Connect to “Fatoora”",
+  "fatooraLinkDesc": "Automatically send invoices to ZATCA",
+  "welcomeTagline": "Your customers, sales and invoices\nin one place",
+  "featureFree": "Completely free, no payment card",
+  "featureFatoora": "Invoices compatible with “Fatoora”",
+  "featureOwnLink": "A private link for your company, with its logo",
+  "createCompanyAccountFree": "Create your company account for free",
+  "haveAccountSignIn": "I have an account — Sign in",
+  "tabActivity": "Activity",
+  "tabData": "Details",
+  "createInvoice": "Create invoice",
+  "quote": "Quote",
+  "customerProfile": "Customer profile",
+  "options": "Options",
+  "call": "Call",
+  "message": "Message",
+  "mail": "Email",
+  "location": "Location",
+  "totalSales": "Total sales",
+  "amountDue": "Outstanding",
+  "openDeals": "Open deals",
+  "goodMorning": "Good morning",
+  "notifications": "Notifications",
+  "searchHint": "Search customers, invoices, deals…",
+  "salesThisMonth": "Sales this month",
+  "sar": "SAR",
+  "sarSpaced": " SAR",
+  "dueInvoices": "Invoices due",
+  "invoice": "Invoice",
+  "customer": "Customer",
+  "deal": "Deal",
+  "todaysTasks": "Today's tasks",
+  "viewAll": "View all",
+  "statusPaid": "Paid",
+  "statusDue": "Due",
+  "statusLate": "Overdue",
+  "all": "All",
+  "payBankTransfer": "Bank transfer",
+  "refTransferNo": "Transfer no.",
+  "payCard": "Mada / card",
+  "refTransactionNo": "Transaction no.",
+  "payCash": "Cash",
+  "refVoucherNo": "Voucher no.",
+  "search": "Search",
+  "thisMonth": "This month",
+  "totalInvoices": "Total invoices",
+  "recordPayment": "Record payment",
+  "share": "Share",
+  "download": "Download",
+  "reportedToFatoora": "Reported to “Fatoora”",
+  "taxInvoiceTo": "Tax invoice to",
+  "invoiceQrSemantic": "Invoice QR code",
+  "issueDate": "Issue date",
+  "dueDate": "Due date",
+  "subtotalBeforeVat": "Subtotal before VAT",
+  "vat15": "VAT 15%",
+  "totalDue": "Total due",
+  "total": "Total",
+  "issueInvoice": "Issue invoice",
+  "draft": "Draft",
+  "invoiceAutoSendNote": "The invoice is sent to “Fatoora” automatically when issued",
+  "newInvoice": "New invoice",
+  "today": "Today",
+  "paymentTerms": "Payment terms",
+  "productsAndServices": "Products & services",
+  "customerLabel": "Customer",
+  "change": "Change",
+  "increaseQty": "Increase quantity",
+  "decreaseQty": "Decrease quantity",
+  "addProduct": "Add product",
+  "sendReceipt": "Send receipt to customer",
+  "backToInvoices": "Back to invoices",
+  "paymentRecorded": "Payment recorded",
+  "invoiceLabel": "Invoice",
+  "paymentMethod": "Payment method",
+  "invoiceStatus": "Invoice status",
+  "paidInFull": "Paid in full",
+  "dealAutoWon": "The linked deal was automatically closed as “Won”",
+  "paymentDate": "Payment date",
+  "optional": "Optional",
+  "attachReceipt": "Attach receipt photo",
+  "confirmPaymentReceived": "Confirm payment received",
+  "amountReceived": "Amount received",
+  "amountHelp": "The full remaining invoice amount · you can record a partial payment",
+  "convertToInvoice": "Convert to invoice",
+  "stageNew": "New",
+  "stageQualified": "Qualified",
+  "stageNegotiation": "Negotiation",
+  "stageWon": "Won",
+  "saveDeal": "Save deal",
+  "saveAndCreateQuote": "Save & create quote",
+  "newDeal": "New deal",
+  "dealTitle": "Deal title",
+  "dealTitleHint": "e.g. Packaging line supply",
+  "newCustomerAction": "+ New customer",
+  "expectedValue": "Expected value",
+  "expectedClose": "Expected close",
+  "expectedCloseHint": "e.g. November 30",
+  "stage": "Stage",
+  "owner": "Owner",
+  "me": "Me",
+  "notes": "Notes",
+  "notesHint": "Request details, competitors, next step…",
+  "filter": "Filter",
+  "stageTotal": "Stage total",
+  "customerApprovedConfirm": "Customer approved — confirm quote",
+  "quoteSent": "Sent",
+  "quoteConfirmed": "Confirmed",
+  "whatsapp": "WhatsApp",
+  "close": "Close",
+  "back": "Back",
+  "stepOf": "Step {step} of {total}",
+  "@stepOf": {
+    "placeholders": {
+      "step": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "probabilityPct": "Probability {value}%",
+  "@probabilityPct": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "amountSar": "{amount} SAR",
+  "@amountSar": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "unitPriceLine": "{price} SAR per unit · {line} SAR",
+  "@unitPriceLine": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      },
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "invoiceRowSubtitle": "Invoice no. {number} · {date}",
+  "@invoiceRowSubtitle": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "invoiceNo": "Invoice no. {number}",
+  "@invoiceNo": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "quoteNo": "Quote no. {number}",
+  "@quoteNo": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "pipelineSummary": "{count} deals · {amount} SAR expected",
+  "@pipelineSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "overdueCount": "{count} overdue",
+  "@overdueCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "amountExpected": "{amount} SAR expected",
+  "@amountExpected": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "vatNumberLine": "VAT number: {number}",
+  "@vatNumberLine": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "legendPaid": "Paid {amount}",
+  "@legendPaid": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "legendDue": "Due {amount}",
+  "@legendDue": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "legendLate": "Overdue {amount}",
+  "@legendLate": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "invoiceNumberValue": "No. {number}",
+  "@invoiceNumberValue": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "customerAndInvoice": "{customer} · Invoice no. {number}",
+  "@customerAndInvoice": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      },
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "authEmailHint": "name@company.com",
+  "authPhoneCountryCode": "+966",
+  "authPhoneHint": "50 000 0000",
+  "authDemoBrandName": "[Your company name]",
+  "authDemoBrandInitial": "Y",
+  "authDemoWorkspaceHandle": "alnokhba",
+  "opportunityLine": "Opportunity: {title}",
+  "@opportunityLine": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "lineQtyPrice": "{qty} × {price}",
+  "@lineQtyPrice": {
+    "placeholders": {
+      "qty": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "glyphPlus": "+",
+  "glyphMinus": "−",
+  "monthName": "{month, select, jan{January} feb{February} mar{March} apr{April} may{May} jun{June} jul{July} aug{August} sep{September} oct{October} nov{November} dec{December} other{}}",
+  "@monthName": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "dateDayMonth": "{month} {day}",
+  "@dateDayMonth": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "dateDayMonthYear": "{month} {day}, {year}",
+  "@dateDayMonthYear": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "month": {
+        "type": "String"
+      },
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "newLeadValueHint": "0",
+  "salesGrowthBadge": "↑ {value}%",
+  "@salesGrowthBadge": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "amountThousands": "{count}K",
+  "@amountThousands": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "retry": "Try again",
+  "errorNetwork": "Can't reach the internet. Check your connection and try again",
+  "errorServer": "Something went wrong on our side. Please try again later",
+  "errorNotFound": "We couldn't find what you were looking for",
+  "errorUnauthorized": "Your session has expired. Please sign in again",
+  "errorValidation": "Please review the details you entered and try again",
+  "errorUnknown": "Something unexpected happened. Please try again",
+  "clockTime": "{hour}:{minute} {period}",
+  "@clockTime": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      },
+      "minute": {
+        "type": "String"
+      },
+      "period": {
+        "type": "String"
+      }
+    }
+  },
+  "timePeriodAm": "AM",
+  "timePeriodPm": "PM",
+  "relativeJustNow": "Just now",
+  "relativeToday": "Today",
+  "relativeTomorrow": "Tomorrow",
+  "relativeMinutesAgo": "{count, plural, =1{1 minute ago} other{{formatted} minutes ago}}",
+  "@relativeMinutesAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "relativeHoursAgo": "{count, plural, =1{1 hour ago} other{{formatted} hours ago}}",
+  "@relativeHoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "relativeDaysAgo": "{count, plural, =1{Yesterday} other{{formatted} days ago}}",
+  "@relativeDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "overdueSinceDays": "{count, plural, =0{Due today} =1{Overdue by 1 day} other{Overdue by {formatted} days}}",
+  "@overdueSinceDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "activityDetailLine": "{first} · {second}",
+  "@activityDetailLine": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "weekdayName": "{day, select, mon{Monday} tue{Tuesday} wed{Wednesday} thu{Thursday} fri{Friday} sat{Saturday} sun{Sunday} other{}}",
+  "@weekdayName": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "dealNextActionWhen": "{title} — {when}",
+  "@dealNextActionWhen": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "dealNextActionTodayAt": "{title} today {time}",
+  "@dealNextActionTodayAt": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "dealQuoteExpiresInDays": "Quote expires in {days} days",
+  "@dealQuoteExpiresInDays": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "dealQuoteExpiresToday": "Quote expires today",
+  "dealQuoteExpiresTomorrow": "Quote expires tomorrow",
+  "dealExpectedCloseOn": "Expected close {date}",
+  "@dealExpectedCloseOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dealNoNextAction": "No next step",
+  "dueInDaysCount": "{count, plural, =0{Due today} =1{Due in 1 day} other{Due in {formatted} days}}",
+  "@dueInDaysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentTermsWithinDays": "Within {days} days",
+  "@paymentTermsWithinDays": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "receiptAttached": "Receipt photo attached",
+  "paidPartially": "Partially paid",
+  "quoteViewedBanner": "Customer opened the quote {viewed} · Valid until {validUntil}",
+  "@quoteViewedBanner": {
+    "placeholders": {
+      "viewed": {
+        "type": "String"
+      },
+      "validUntil": {
+        "type": "String"
+      }
+    }
+  },
+  "quoteViewedToday": "today {time}",
+  "@quoteViewedToday": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "quoteViewedOn": "on {date} at {time}",
+  "@quoteViewedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "loginBiometricNeedsPassword": "Sign in with your email and password first",
+  "invoicesSearchHint": "Search by invoice number or customer",
+  "closeSearch": "Close search",
+  "selectPeriod": "Choose period",
+  "periodLastMonth": "Last month",
+  "periodThisYear": "This year",
+  "periodAllTime": "All time",
+  "productCatalogTitle": "From the catalog",
+  "customItemTitle": "Custom item",
+  "itemNameLabel": "Item name",
+  "itemNameHint": "e.g. Consulting service",
+  "unitPriceLabel": "Unit price",
+  "addToInvoice": "Add to invoice",
+  "removeLine": "Remove item",
+  "noProducts": "No products in the catalog",
+  "settingsTitle": "Account",
+  "settingsOpenAccount": "Open account and settings",
+  "settingsWorkspace": "Workspace",
+  "settingsWorkspaceUrl": "Workspace link",
+  "settingsLanguage": "Language",
+  "settingsSignOut": "Sign out",
+  "settingsSignOutTitle": "Sign out?",
+  "settingsSignOutBody": "You will need to sign in again to reach your workspace.",
+  "settingsSignOutConfirm": "Sign out",
+  "settingsCancel": "Cancel",
+  "customersCount": "{count} customers",
+  "@customersCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "customersSearchHint": "Search by customer name or city",
+  "customersEmpty": "No customers yet",
+  "customersNoResults": "No matching customers",
+  "customerOpenDealsCount": "{count} open deals",
+  "@customerOpenDealsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "customerDuePill": "Due {amount}",
+  "@customerDuePill": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "customerAddress": "Address",
+  "customerSector": "Sector",
+  "customerSince": "Customer since",
+  "customerNoDeals": "No deals for this customer",
+  "customerNoInvoices": "No invoices for this customer",
+  "customerInvoiceTitle": "Invoice #{number}",
+  "@customerInvoiceTitle": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  }
+}

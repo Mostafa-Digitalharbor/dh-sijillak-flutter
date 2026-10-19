@@ -1,0 +1,40 @@
+{
+  "ar": {
+    "newLeadValueHint": "٠",
+    "salesGrowthBadge": "↑ {value}٪",
+    "@salesGrowthBadge": {
+      "placeholders": {
+        "value": {
+          "type": "String"
+        }
+      }
+    },
+    "amountThousands": "{count} ألف",
+    "@amountThousands": {
+      "placeholders": {
+        "count": {
+          "type": "String"
+        }
+      }
+    }
+  },
+  "en": {
+    "newLeadValueHint": "0",
+    "salesGrowthBadge": "↑ {value}%",
+    "@salesGrowthBadge": {
+      "placeholders": {
+        "value": {
+          "type": "String"
+        }
+      }
+    },
+    "amountThousands": "{count}K",
+    "@amountThousands": {
+      "placeholders": {
+        "count": {
+          "type": "String"
+        }
+      }
+    }
+  }
+}

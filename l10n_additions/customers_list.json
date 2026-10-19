@@ -1,0 +1,86 @@
+{
+  "ar": {
+    "customersCount": "{count} عميل",
+    "@customersCount": {
+      "placeholders": {
+        "count": {
+          "type": "String"
+        }
+      }
+    },
+    "customersSearchHint": "ابحث باسم العميل أو المدينة",
+    "customersEmpty": "لا يوجد عملاء بعد",
+    "customersNoResults": "لا توجد نتائج مطابقة",
+    "customerOpenDealsCount": "{count} فرص مفتوحة",
+    "@customerOpenDealsCount": {
+      "placeholders": {
+        "count": {
+          "type": "String"
+        }
+      }
+    },
+    "customerDuePill": "مستحق {amount}",
+    "@customerDuePill": {
+      "placeholders": {
+        "amount": {
+          "type": "String"
+        }
+      }
+    },
+    "customerAddress": "العنوان",
+    "customerSector": "القطاع",
+    "customerSince": "عميل منذ",
+    "customerNoDeals": "لا توجد فرص لهذا العميل",
+    "customerNoInvoices": "لا توجد فواتير لهذا العميل",
+    "customerInvoiceTitle": "فاتورة رقم {number}",
+    "@customerInvoiceTitle": {
+      "placeholders": {
+        "number": {
+          "type": "String"
+        }
+      }
+    }
+  },
+  "en": {
+    "customersCount": "{count} customers",
+    "@customersCount": {
+      "placeholders": {
+        "count": {
+          "type": "String"
+        }
+      }
+    },
+    "customersSearchHint": "Search by customer name or city",
+    "customersEmpty": "No customers yet",
+    "customersNoResults": "No matching customers",
+    "customerOpenDealsCount": "{count} open deals",
+    "@customerOpenDealsCount": {
+      "placeholders": {
+        "count": {
+          "type": "String"
+        }
+      }
+    },
+    "customerDuePill": "Due {amount}",
+    "@customerDuePill": {
+      "placeholders": {
+        "amount": {
+          "type": "String"
+        }
+      }
+    },
+    "customerAddress": "Address",
+    "customerSector": "Sector",
+    "customerSince": "Customer since",
+    "customerNoDeals": "No deals for this customer",
+    "customerNoInvoices": "No invoices for this customer",
+    "customerInvoiceTitle": "Invoice #{number}",
+    "@customerInvoiceTitle": {
+      "placeholders": {
+        "number": {
+          "type": "String"
+        }
+      }
+    }
+  }
+}

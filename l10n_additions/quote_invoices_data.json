@@ -1,0 +1,108 @@
+{
+  "ar": {
+    "dueInDaysCount": "{count, plural, =0{تستحق اليوم} =1{مستحقة خلال يوم} =2{مستحقة خلال يومين} few{مستحقة خلال {formatted} أيام} other{مستحقة خلال {formatted} يوماً}}",
+    "@dueInDaysCount": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "paymentTermsWithinDays": "خلال {days} يوماً",
+    "@paymentTermsWithinDays": {
+      "placeholders": {
+        "days": {
+          "type": "String"
+        }
+      }
+    },
+    "receiptAttached": "تم إرفاق صورة الإيصال",
+    "paidPartially": "مدفوعة جزئياً",
+    "quoteViewedBanner": "فتح العميل العرض {viewed} · صالح حتى {validUntil}",
+    "@quoteViewedBanner": {
+      "placeholders": {
+        "viewed": {
+          "type": "String"
+        },
+        "validUntil": {
+          "type": "String"
+        }
+      }
+    },
+    "quoteViewedToday": "اليوم {time}",
+    "@quoteViewedToday": {
+      "placeholders": {
+        "time": {
+          "type": "String"
+        }
+      }
+    },
+    "quoteViewedOn": "{date} {time}",
+    "@quoteViewedOn": {
+      "placeholders": {
+        "date": {
+          "type": "String"
+        },
+        "time": {
+          "type": "String"
+        }
+      }
+    }
+  },
+  "en": {
+    "dueInDaysCount": "{count, plural, =0{Due today} =1{Due in 1 day} other{Due in {formatted} days}}",
+    "@dueInDaysCount": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "paymentTermsWithinDays": "Within {days} days",
+    "@paymentTermsWithinDays": {
+      "placeholders": {
+        "days": {
+          "type": "String"
+        }
+      }
+    },
+    "receiptAttached": "Receipt photo attached",
+    "paidPartially": "Partially paid",
+    "quoteViewedBanner": "Customer opened the quote {viewed} · Valid until {validUntil}",
+    "@quoteViewedBanner": {
+      "placeholders": {
+        "viewed": {
+          "type": "String"
+        },
+        "validUntil": {
+          "type": "String"
+        }
+      }
+    },
+    "quoteViewedToday": "today {time}",
+    "@quoteViewedToday": {
+      "placeholders": {
+        "time": {
+          "type": "String"
+        }
+      }
+    },
+    "quoteViewedOn": "on {date} at {time}",
+    "@quoteViewedOn": {
+      "placeholders": {
+        "date": {
+          "type": "String"
+        },
+        "time": {
+          "type": "String"
+        }
+      }
+    }
+  }
+}

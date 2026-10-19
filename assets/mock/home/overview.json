@@ -1,0 +1,32 @@
+{
+  "data": {
+    "user": { "id": "u-1", "name": "[اسم المستخدم]", "firstName": "محمد" },
+    "summary": {
+      "monthlySales": 128450,
+      "salesGrowthPercent": 12,
+      "recentSales": [40000, 55000, 35000, 70000, 60000, 82000, 100000],
+      "dueAmount": 34200,
+      "overdueInvoices": 5,
+      "openDeals": 18,
+      "expectedDealsValue": 210000
+    },
+    "tasks": [
+      {
+        "id": "t-1",
+        "kind": "call",
+        "title": "مكالمة متابعة عرض السعر",
+        "customerName": "مصنع الأغذية الحديثة",
+        "dayOffset": 0,
+        "time": "10:30"
+      },
+      {
+        "id": "t-2",
+        "kind": "meeting",
+        "title": "اجتماع عرض المنتج",
+        "customerName": "مؤسسة التوريدات المتحدة",
+        "dayOffset": 0,
+        "time": "13:00"
+      }
+    ]
+  }
+}

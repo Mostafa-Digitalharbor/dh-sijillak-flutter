@@ -1,0 +1,34 @@
+{
+  "ar": {
+    "invoicesSearchHint": "ابحث برقم الفاتورة أو العميل",
+    "closeSearch": "إغلاق البحث",
+    "selectPeriod": "اختيار الفترة",
+    "periodLastMonth": "الشهر الماضي",
+    "periodThisYear": "هذه السنة",
+    "periodAllTime": "كل الفترات",
+    "productCatalogTitle": "من قائمة المنتجات",
+    "customItemTitle": "بند مخصص",
+    "itemNameLabel": "اسم البند",
+    "itemNameHint": "مثال: خدمة استشارية",
+    "unitPriceLabel": "سعر الوحدة",
+    "addToInvoice": "إضافة إلى الفاتورة",
+    "removeLine": "حذف البند",
+    "noProducts": "لا توجد منتجات في القائمة"
+  },
+  "en": {
+    "invoicesSearchHint": "Search by invoice number or customer",
+    "closeSearch": "Close search",
+    "selectPeriod": "Choose period",
+    "periodLastMonth": "Last month",
+    "periodThisYear": "This year",
+    "periodAllTime": "All time",
+    "productCatalogTitle": "From the catalog",
+    "customItemTitle": "Custom item",
+    "itemNameLabel": "Item name",
+    "itemNameHint": "e.g. Consulting service",
+    "unitPriceLabel": "Unit price",
+    "addToInvoice": "Add to invoice",
+    "removeLine": "Remove item",
+    "noProducts": "No products in the catalog"
+  }
+}

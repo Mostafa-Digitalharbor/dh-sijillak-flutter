@@ -1,0 +1,114 @@
+{
+  "ar": {
+    "opportunityLine": "الفرصة: {title}",
+    "@opportunityLine": {
+      "placeholders": {
+        "title": {
+          "type": "String"
+        }
+      }
+    },
+    "lineQtyPrice": "{qty} × {price}",
+    "@lineQtyPrice": {
+      "placeholders": {
+        "qty": {
+          "type": "String"
+        },
+        "price": {
+          "type": "String"
+        }
+      }
+    },
+    "glyphPlus": "+",
+    "glyphMinus": "−",
+    "monthName": "{month, select, jan{يناير} feb{فبراير} mar{مارس} apr{أبريل} may{مايو} jun{يونيو} jul{يوليو} aug{أغسطس} sep{سبتمبر} oct{أكتوبر} nov{نوفمبر} dec{ديسمبر} other{}}",
+    "@monthName": {
+      "placeholders": {
+        "month": {
+          "type": "String"
+        }
+      }
+    },
+    "dateDayMonth": "{day} {month}",
+    "@dateDayMonth": {
+      "placeholders": {
+        "day": {
+          "type": "String"
+        },
+        "month": {
+          "type": "String"
+        }
+      }
+    },
+    "dateDayMonthYear": "{day} {month} {year}",
+    "@dateDayMonthYear": {
+      "placeholders": {
+        "day": {
+          "type": "String"
+        },
+        "month": {
+          "type": "String"
+        },
+        "year": {
+          "type": "String"
+        }
+      }
+    }
+  },
+  "en": {
+    "opportunityLine": "Opportunity: {title}",
+    "@opportunityLine": {
+      "placeholders": {
+        "title": {
+          "type": "String"
+        }
+      }
+    },
+    "lineQtyPrice": "{qty} × {price}",
+    "@lineQtyPrice": {
+      "placeholders": {
+        "qty": {
+          "type": "String"
+        },
+        "price": {
+          "type": "String"
+        }
+      }
+    },
+    "glyphPlus": "+",
+    "glyphMinus": "−",
+    "monthName": "{month, select, jan{January} feb{February} mar{March} apr{April} may{May} jun{June} jul{July} aug{August} sep{September} oct{October} nov{November} dec{December} other{}}",
+    "@monthName": {
+      "placeholders": {
+        "month": {
+          "type": "String"
+        }
+      }
+    },
+    "dateDayMonth": "{month} {day}",
+    "@dateDayMonth": {
+      "placeholders": {
+        "day": {
+          "type": "String"
+        },
+        "month": {
+          "type": "String"
+        }
+      }
+    },
+    "dateDayMonthYear": "{month} {day}, {year}",
+    "@dateDayMonthYear": {
+      "placeholders": {
+        "day": {
+          "type": "String"
+        },
+        "month": {
+          "type": "String"
+        },
+        "year": {
+          "type": "String"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "ar": {
+    "clockTime": "{hour}:{minute} {period}",
+    "@clockTime": {
+      "placeholders": {
+        "hour": {
+          "type": "String"
+        },
+        "minute": {
+          "type": "String"
+        },
+        "period": {
+          "type": "String"
+        }
+      }
+    },
+    "timePeriodAm": "ص",
+    "timePeriodPm": "م",
+    "relativeJustNow": "الآن",
+    "relativeToday": "اليوم",
+    "relativeTomorrow": "غداً",
+    "relativeMinutesAgo": "{count, plural, =1{منذ دقيقة} =2{منذ دقيقتين} few{منذ {formatted} دقائق} other{منذ {formatted} دقيقة}}",
+    "@relativeMinutesAgo": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "relativeHoursAgo": "{count, plural, =1{منذ ساعة} =2{منذ ساعتين} few{منذ {formatted} ساعات} other{منذ {formatted} ساعة}}",
+    "@relativeHoursAgo": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "relativeDaysAgo": "{count, plural, =1{أمس} =2{منذ يومين} few{منذ {formatted} أيام} other{منذ {formatted} يوماً}}",
+    "@relativeDaysAgo": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "overdueSinceDays": "{count, plural, =0{مستحقة اليوم} =1{مستحقة منذ يوم} =2{مستحقة منذ يومين} few{مستحقة منذ {formatted} أيام} other{مستحقة منذ {formatted} يوماً}}",
+    "@overdueSinceDays": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "activityDetailLine": "{first} · {second}",
+    "@activityDetailLine": {
+      "placeholders": {
+        "first": {
+          "type": "String"
+        },
+        "second": {
+          "type": "String"
+        }
+      }
+    },
+    "weekdayName": "{day, select, mon{الاثنين} tue{الثلاثاء} wed{الأربعاء} thu{الخميس} fri{الجمعة} sat{السبت} sun{الأحد} other{}}",
+    "@weekdayName": {
+      "placeholders": {
+        "day": {
+          "type": "String"
+        }
+      }
+    },
+    "dealNextActionWhen": "{title} — {when}",
+    "@dealNextActionWhen": {
+      "placeholders": {
+        "title": {
+          "type": "String"
+        },
+        "when": {
+          "type": "String"
+        }
+      }
+    },
+    "dealNextActionTodayAt": "{title} اليوم {time}",
+    "@dealNextActionTodayAt": {
+      "placeholders": {
+        "title": {
+          "type": "String"
+        },
+        "time": {
+          "type": "String"
+        }
+      }
+    },
+    "dealQuoteExpiresInDays": "انتهاء العرض بعد {days} أيام",
+    "@dealQuoteExpiresInDays": {
+      "placeholders": {
+        "days": {
+          "type": "String"
+        }
+      }
+    },
+    "dealQuoteExpiresToday": "انتهاء العرض اليوم",
+    "dealQuoteExpiresTomorrow": "انتهاء العرض غداً",
+    "dealExpectedCloseOn": "الإغلاق المتوقع {date}",
+    "@dealExpectedCloseOn": {
+      "placeholders": {
+        "date": {
+          "type": "String"
+        }
+      }
+    },
+    "dealNoNextAction": "لا توجد خطوة تالية"
+  },
+  "en": {
+    "clockTime": "{hour}:{minute} {period}",
+    "@clockTime": {
+      "placeholders": {
+        "hour": {
+          "type": "String"
+        },
+        "minute": {
+          "type": "String"
+        },
+        "period": {
+          "type": "String"
+        }
+      }
+    },
+    "timePeriodAm": "AM",
+    "timePeriodPm": "PM",
+    "relativeJustNow": "Just now",
+    "relativeToday": "Today",
+    "relativeTomorrow": "Tomorrow",
+    "relativeMinutesAgo": "{count, plural, =1{1 minute ago} other{{formatted} minutes ago}}",
+    "@relativeMinutesAgo": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "relativeHoursAgo": "{count, plural, =1{1 hour ago} other{{formatted} hours ago}}",
+    "@relativeHoursAgo": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "relativeDaysAgo": "{count, plural, =1{Yesterday} other{{formatted} days ago}}",
+    "@relativeDaysAgo": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "overdueSinceDays": "{count, plural, =0{Due today} =1{Overdue by 1 day} other{Overdue by {formatted} days}}",
+    "@overdueSinceDays": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        },
+        "formatted": {
+          "type": "String"
+        }
+      }
+    },
+    "activityDetailLine": "{first} · {second}",
+    "@activityDetailLine": {
+      "placeholders": {
+        "first": {
+          "type": "String"
+        },
+        "second": {
+          "type": "String"
+        }
+      }
+    },
+    "weekdayName": "{day, select, mon{Monday} tue{Tuesday} wed{Wednesday} thu{Thursday} fri{Friday} sat{Saturday} sun{Sunday} other{}}",
+    "@weekdayName": {
+      "placeholders": {
+        "day": {
+          "type": "String"
+        }
+      }
+    },
+    "dealNextActionWhen": "{title} — {when}",
+    "@dealNextActionWhen": {
+      "placeholders": {
+        "title": {
+          "type": "String"
+        },
+        "when": {
+          "type": "String"
+        }
+      }
+    },
+    "dealNextActionTodayAt": "{title} today {time}",
+    "@dealNextActionTodayAt": {
+      "placeholders": {
+        "title": {
+          "type": "String"
+        },
+        "time": {
+          "type": "String"
+        }
+      }
+    },
+    "dealQuoteExpiresInDays": "Quote expires in {days} days",
+    "@dealQuoteExpiresInDays": {
+      "placeholders": {
+        "days": {
+          "type": "String"
+        }
+      }
+    },
+    "dealQuoteExpiresToday": "Quote expires today",
+    "dealQuoteExpiresTomorrow": "Quote expires tomorrow",
+    "dealExpectedCloseOn": "Expected close {date}",
+    "@dealExpectedCloseOn": {
+      "placeholders": {
+        "date": {
+          "type": "String"
+        }
+      }
+    },
+    "dealNoNextAction": "No next step"
+  }
+}

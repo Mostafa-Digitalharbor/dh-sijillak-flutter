@@ -1,0 +1,276 @@
+{
+  "data": {
+    "overviews": {
+      "thisMonth": {
+        "paid": 128450,
+        "due": 21550,
+        "late": 12650
+      },
+      "lastMonth": {
+        "paid": 96200,
+        "due": 18400,
+        "late": 0
+      },
+      "thisYear": {
+        "paid": 842300,
+        "due": 40000,
+        "late": 12650
+      },
+      "allTime": {
+        "paid": 1264800,
+        "due": 40000,
+        "late": 12650
+      }
+    },
+    "invoices": [
+      {
+        "number": 392,
+        "customer": "مصنع الأغذية الحديثة",
+        "vatNumber": "310000000000003",
+        "issue": {
+          "monthsAgo": 0,
+          "daysAgo": 1
+        },
+        "termsDays": 12,
+        "status": "paid",
+        "amount": 38000,
+        "lines": [
+          {
+            "name": "خط تعبئة آلي - الدفعة الأولى",
+            "unitPrice": 33043,
+            "quantity": 1
+          }
+        ],
+        "payments": [
+          {
+            "amount": 38000,
+            "method": "bank_transfer",
+            "paidAfterDays": 0,
+            "reference": "TRX-20261017-392",
+            "hasReceipt": true
+          }
+        ]
+      },
+      {
+        "number": 391,
+        "customer": "مؤسسة التوريدات المتحدة",
+        "vatNumber": "310000000000003",
+        "issue": {
+          "monthsAgo": 0,
+          "daysAgo": 3
+        },
+        "termsDays": 12,
+        "status": "due",
+        "amount": 14375,
+        "lines": [
+          {
+            "name": "توريد معدات تعبئة",
+            "unitPrice": 10000,
+            "quantity": 1
+          },
+          {
+            "name": "خدمة التركيب والتشغيل",
+            "unitPrice": 2500,
+            "quantity": 1
+          }
+        ],
+        "payments": []
+      },
+      {
+        "number": 388,
+        "customer": "مصنع الأغذية الحديثة",
+        "vatNumber": "310000000000003",
+        "issue": {
+          "monthsAgo": 0,
+          "daysAgo": 16
+        },
+        "termsDays": 12,
+        "status": "late",
+        "amount": 12650,
+        "lines": [
+          {
+            "name": "قطع غيار خط التعبئة",
+            "unitPrice": 8000,
+            "quantity": 1
+          },
+          {
+            "name": "صيانة دورية",
+            "unitPrice": 3000,
+            "quantity": 1
+          }
+        ],
+        "payments": []
+      },
+      {
+        "number": 387,
+        "customer": "مجموعة العقارات الذهبية",
+        "vatNumber": "310000000000003",
+        "issue": {
+          "monthsAgo": 0,
+          "daysAgo": 17
+        },
+        "termsDays": 12,
+        "status": "paid",
+        "amount": 24000,
+        "lines": [
+          {
+            "name": "خدمات إدارة العقارات - أكتوبر",
+            "unitPrice": 20870,
+            "quantity": 1
+          }
+        ],
+        "payments": [
+          {
+            "amount": 24000,
+            "method": "card",
+            "paidAfterDays": 2,
+            "reference": "CARD-8841",
+            "hasReceipt": false
+          }
+        ]
+      },
+      {
+        "number": 385,
+        "customer": "شركة الخدمات اللوجستية",
+        "vatNumber": "310000000000003",
+        "issue": {
+          "monthsAgo": 0,
+          "daysAgo": 14
+        },
+        "termsDays": 16,
+        "status": "due",
+        "amount": 7175,
+        "lines": [
+          {
+            "name": "خدمات النقل واللوجستيات",
+            "unitPrice": 6239,
+            "quantity": 1
+          }
+        ],
+        "payments": []
+      },
+      {
+        "number": 384,
+        "customer": "مصنع الأغذية الحديثة",
+        "vatNumber": "310000000000003",
+        "issue": {
+          "monthsAgo": 1,
+          "daysAgo": 5
+        },
+        "termsDays": 14,
+        "status": "paid",
+        "amount": 57500,
+        "lines": [
+          {
+            "name": "خط تعبئة آلي - الدفعة الأخيرة",
+            "unitPrice": 50000,
+            "quantity": 1
+          }
+        ],
+        "payments": [
+          {
+            "amount": 57500,
+            "method": "bank_transfer",
+            "paidAfterDays": 6,
+            "reference": "TRX-384",
+            "hasReceipt": true
+          }
+        ]
+      },
+      {
+        "number": 383,
+        "customer": "مؤسسة التوريدات المتحدة",
+        "vatNumber": "310000000000003",
+        "issue": {
+          "monthsAgo": 1,
+          "daysAgo": 12
+        },
+        "termsDays": 15,
+        "status": "paid",
+        "amount": 38525,
+        "lines": [
+          {
+            "name": "توريد معدات تعبئة",
+            "unitPrice": 10000,
+            "quantity": 3
+          },
+          {
+            "name": "خدمة التركيب والتشغيل",
+            "unitPrice": 2500,
+            "quantity": 1
+          },
+          {
+            "name": "قطع غيار",
+            "unitPrice": 1000,
+            "quantity": 1
+          }
+        ],
+        "payments": [
+          {
+            "amount": 38525,
+            "method": "card",
+            "paidAfterDays": 9,
+            "reference": "CARD-5520",
+            "hasReceipt": false
+          }
+        ]
+      },
+      {
+        "number": 380,
+        "customer": "شركة الخدمات اللوجستية",
+        "vatNumber": "310000000000003",
+        "issue": {
+          "monthsAgo": 3,
+          "daysAgo": 9
+        },
+        "termsDays": 30,
+        "status": "paid",
+        "amount": 28750,
+        "lines": [
+          {
+            "name": "خدمات النقل واللوجستيات",
+            "unitPrice": 25000,
+            "quantity": 1
+          }
+        ],
+        "payments": [
+          {
+            "amount": 28750,
+            "method": "bank_transfer",
+            "paidAfterDays": 20,
+            "reference": "TRX-380",
+            "hasReceipt": true
+          }
+        ]
+      },
+      {
+        "number": 351,
+        "customer": "مجموعة العقارات الذهبية",
+        "vatNumber": "310000000000003",
+        "issue": {
+          "monthsAgo": 14,
+          "daysAgo": 3
+        },
+        "termsDays": 30,
+        "status": "paid",
+        "amount": 17250,
+        "lines": [
+          {
+            "name": "خدمات إدارة العقارات",
+            "unitPrice": 15000,
+            "quantity": 1
+          }
+        ],
+        "payments": [
+          {
+            "amount": 17250,
+            "method": "cash",
+            "paidAfterDays": 12,
+            "reference": "CASH-351",
+            "hasReceipt": false
+          }
+        ]
+      }
+    ]
+  }
+}

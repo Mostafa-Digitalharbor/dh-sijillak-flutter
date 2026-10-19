@@ -1,0 +1,8 @@
+{
+  "ar": {
+    "loginBiometricNeedsPassword": "سجّل الدخول بالبريد وكلمة المرور أولاً"
+  },
+  "en": {
+    "loginBiometricNeedsPassword": "Sign in with your email and password first"
+  }
+}

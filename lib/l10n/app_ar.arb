@@ -1,0 +1,671 @@
+{
+  "@@locale": "ar",
+  "appName": "سجلك",
+  "navHome": "الرئيسية",
+  "navPipeline": "الفرص",
+  "navCustomers": "العملاء",
+  "invoices": "الفواتير",
+  "createNew": "إنشاء جديد",
+  "loginTitle": "مرحباً بعودتك",
+  "loginSubtitle": "سجّل دخولك إلى مساحة شركتك",
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "signIn": "تسجيل الدخول",
+  "signInFaceId": "الدخول ببصمة الوجه",
+  "fatooraCompliant": "متوافق مع الفوترة الإلكترونية «فاتورة»",
+  "noAccountPrompt": "ليس لدى شركتك حساب؟ ",
+  "signUpFree": "سجّل مجاناً",
+  "accountTitle": "حساب مدير المساحة",
+  "accountSubtitle": "ستكون المسؤول عن إضافة فريقك لاحقاً",
+  "sendOtp": "إرسال رمز التحقق",
+  "fullName": "الاسم الكامل",
+  "fullNameHint": "الاسم الأول والأخير",
+  "workEmail": "البريد الإلكتروني للعمل",
+  "mobileNumber": "رقم الجوال",
+  "strengthWeak": "ضعيفة",
+  "strengthMedium": "متوسطة",
+  "strengthStrong": "قوية",
+  "passwordHint": "٨ أحرف على الأقل",
+  "agreeTo": "أوافق على ",
+  "termsOfUse": "شروط الاستخدام",
+  "andJoiner": " و",
+  "privacyPolicy": "سياسة الخصوصية",
+  "companyLogo": "شعار شركتك",
+  "logoSubtitle": "يظهر في صفحة دخول فريقك وعلى الفواتير",
+  "createWorkspace": "إنشاء المساحة",
+  "skip": "تخطي",
+  "loginPreview": "معاينة صفحة الدخول",
+  "uploadedTapToChange": "تم الرفع — اضغط للتغيير",
+  "uploadLogo": "ارفع الشعار",
+  "logoRequirements": "صورة بخلفية فاتحة، حتى ٢ ميجابايت",
+  "sectorTrade": "تجارة وتوزيع",
+  "sectorIndustry": "صناعة",
+  "sectorServices": "خدمات",
+  "sectorContracting": "مقاولات",
+  "sectorOther": "أخرى",
+  "companyTitle": "عرّفنا بشركتك",
+  "companySubtitle": "واختر رابط المساحة الخاص بها",
+  "continueLabel": "متابعة",
+  "companyName": "اسم الشركة",
+  "companyNameHint": "الاسم كما في السجل التجاري",
+  "companySector": "نشاط الشركة",
+  "workspaceLink": "رابط مساحة الشركة",
+  "linkAvailable": "الرابط متاح",
+  "linkTaken": "هذا الرابط مستخدم، جرّب اسماً آخر",
+  "linkRules": "أحرف إنجليزية صغيرة وأرقام فقط",
+  "teamWillSignInVia": "سيدخل فريقك من خلال",
+  "enterWorkspace": "الدخول إلى المساحة",
+  "inviteTeam": "دعوة أعضاء الفريق",
+  "workspaceReady": "مساحة شركتك جاهزة",
+  "shareLinkWithTeam": "شارك الرابط مع فريقك ليبدؤوا العمل",
+  "linkCopied": "تم نسخ الرابط",
+  "copy": "نسخ",
+  "startInThreeSteps": "ابدأ بثلاث خطوات",
+  "addFirstCustomer": "أضف أول عميل",
+  "addProducts": "أضف منتجاتك وخدماتك",
+  "issueFirstInvoice": "أصدر أول فاتورة",
+  "verifyAndContinue": "تحقق ومتابعة",
+  "otpTitle": "أدخل رمز التحقق",
+  "otpSubtitle": "أرسلنا رمزاً من ٦ أرقام إلى الجوال",
+  "edit": "تعديل",
+  "verificationCode": "رمز التحقق",
+  "resendCode": "إعادة إرسال الرمز",
+  "resendIn": "إعادة الإرسال بعد ",
+  "delete": "حذف",
+  "cityRiyadh": "الرياض",
+  "cityJeddah": "جدة",
+  "cityDammam": "الدمام",
+  "cityMakkah": "مكة المكرمة",
+  "cityMadinah": "المدينة المنورة",
+  "taxTitle": "البيانات الضريبية",
+  "taxSubtitle": "تظهر على فواتيرك وتلزم للربط مع «فاتورة»",
+  "later": "لاحقاً",
+  "commercialRegNo": "رقم السجل التجاري",
+  "digits10": "١٠ أرقام",
+  "vatNumber": "الرقم الضريبي",
+  "vatNumberHint": "١٥ رقماً يبدأ وينتهي بـ ٣",
+  "nationalAddress": "العنوان الوطني",
+  "postalCode": "الرمز البريدي",
+  "digits5": "٥ أرقام",
+  "addressHint": "الحي، الشارع، رقم المبنى",
+  "city": "المدينة",
+  "fatooraLinkSemantic": "الربط مع منصة فاتورة",
+  "fatooraLink": "الربط مع منصة «فاتورة»",
+  "fatooraLinkDesc": "إرسال الفواتير لهيئة الزكاة تلقائياً",
+  "welcomeTagline": "عملاؤك ومبيعاتك وفواتيرك\nفي مكان واحد",
+  "featureFree": "مجاني بالكامل، بلا بطاقة دفع",
+  "featureFatoora": "فواتير متوافقة مع منصة «فاتورة»",
+  "featureOwnLink": "رابط خاص لشركتك بشعارها",
+  "createCompanyAccountFree": "أنشئ حساب شركتك مجاناً",
+  "haveAccountSignIn": "لدي حساب — تسجيل الدخول",
+  "tabActivity": "النشاط",
+  "tabData": "البيانات",
+  "createInvoice": "إنشاء فاتورة",
+  "quote": "عرض سعر",
+  "customerProfile": "ملف العميل",
+  "options": "خيارات",
+  "call": "اتصال",
+  "message": "رسالة",
+  "mail": "بريد",
+  "location": "الموقع",
+  "totalSales": "إجمالي المبيعات",
+  "amountDue": "المستحق",
+  "openDeals": "فرص مفتوحة",
+  "goodMorning": "صباح الخير",
+  "notifications": "الإشعارات",
+  "searchHint": "ابحث عن عميل، فاتورة، فرصة…",
+  "salesThisMonth": "مبيعات هذا الشهر",
+  "sar": "ر.س",
+  "sarSpaced": " ر.س",
+  "dueInvoices": "فواتير مستحقة",
+  "invoice": "فاتورة",
+  "customer": "عميل",
+  "deal": "فرصة",
+  "todaysTasks": "مهام اليوم",
+  "viewAll": "عرض الكل",
+  "statusPaid": "مدفوعة",
+  "statusDue": "مستحقة",
+  "statusLate": "متأخرة",
+  "all": "الكل",
+  "payBankTransfer": "تحويل بنكي",
+  "refTransferNo": "رقم الحوالة",
+  "payCard": "مدى / بطاقة",
+  "refTransactionNo": "رقم العملية",
+  "payCash": "نقداً",
+  "refVoucherNo": "رقم السند",
+  "search": "بحث",
+  "thisMonth": "هذا الشهر",
+  "totalInvoices": "إجمالي الفواتير",
+  "recordPayment": "تسجيل دفعة",
+  "share": "مشاركة",
+  "download": "تحميل",
+  "reportedToFatoora": "مُبلّغة إلى «فاتورة»",
+  "taxInvoiceTo": "فاتورة ضريبية إلى",
+  "invoiceQrSemantic": "رمز الاستجابة السريعة للفاتورة",
+  "issueDate": "تاريخ الإصدار",
+  "dueDate": "تاريخ الاستحقاق",
+  "subtotalBeforeVat": "المجموع قبل الضريبة",
+  "vat15": "ضريبة القيمة المضافة ١٥٪",
+  "totalDue": "الإجمالي المستحق",
+  "total": "الإجمالي",
+  "issueInvoice": "إصدار الفاتورة",
+  "draft": "مسودة",
+  "invoiceAutoSendNote": "تُرسل الفاتورة إلى منصة «فاتورة» تلقائياً عند الإصدار",
+  "newInvoice": "فاتورة جديدة",
+  "today": "اليوم",
+  "paymentTerms": "شروط الدفع",
+  "productsAndServices": "المنتجات والخدمات",
+  "customerLabel": "العميل",
+  "change": "تغيير",
+  "increaseQty": "زيادة الكمية",
+  "decreaseQty": "إنقاص الكمية",
+  "addProduct": "إضافة منتج",
+  "sendReceipt": "إرسال الإيصال للعميل",
+  "backToInvoices": "العودة إلى الفواتير",
+  "paymentRecorded": "تم تسجيل الدفعة",
+  "invoiceLabel": "الفاتورة",
+  "paymentMethod": "طريقة الدفع",
+  "invoiceStatus": "حالة الفاتورة",
+  "paidInFull": "مدفوعة بالكامل",
+  "dealAutoWon": "أُغلقت الفرصة المرتبطة كـ«مكسوبة» تلقائياً",
+  "paymentDate": "تاريخ الدفع",
+  "optional": "اختياري",
+  "attachReceipt": "إرفاق صورة الإيصال",
+  "confirmPaymentReceived": "تأكيد استلام الدفعة",
+  "amountReceived": "المبلغ المستلم",
+  "amountHelp": "المبلغ المتبقي على الفاتورة كاملاً · يمكنك تسجيل دفعة جزئية",
+  "convertToInvoice": "تحويل إلى فاتورة",
+  "stageNew": "جديدة",
+  "stageQualified": "مؤهلة",
+  "stageNegotiation": "تفاوض",
+  "stageWon": "مكسوبة",
+  "saveDeal": "حفظ الفرصة",
+  "saveAndCreateQuote": "حفظ وإنشاء عرض سعر",
+  "newDeal": "فرصة جديدة",
+  "dealTitle": "عنوان الفرصة",
+  "dealTitleHint": "مثال: توريد خط تعبئة",
+  "newCustomerAction": "+ عميل جديد",
+  "expectedValue": "القيمة المتوقعة",
+  "expectedClose": "الإغلاق المتوقع",
+  "expectedCloseHint": "مثال: ٣٠ نوفمبر",
+  "stage": "المرحلة",
+  "owner": "المسؤول",
+  "me": "أنا",
+  "notes": "ملاحظات",
+  "notesHint": "تفاصيل الطلب، المنافسون، الخطوة التالية…",
+  "filter": "تصفية",
+  "stageTotal": "إجمالي المرحلة",
+  "customerApprovedConfirm": "العميل وافق — تأكيد العرض",
+  "quoteSent": "مُرسل",
+  "quoteConfirmed": "مؤكد",
+  "whatsapp": "واتساب",
+  "close": "إغلاق",
+  "back": "رجوع",
+  "stepOf": "الخطوة {step} من {total}",
+  "@stepOf": {
+    "placeholders": {
+      "step": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "probabilityPct": "احتمال {value}٪",
+  "@probabilityPct": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "amountSar": "{amount} ر.س",
+  "@amountSar": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "unitPriceLine": "{price} ر.س للوحدة · {line} ر.س",
+  "@unitPriceLine": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      },
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "invoiceRowSubtitle": "فاتورة رقم {number} · {date}",
+  "@invoiceRowSubtitle": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "invoiceNo": "فاتورة رقم {number}",
+  "@invoiceNo": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "quoteNo": "عرض سعر رقم {number}",
+  "@quoteNo": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "pipelineSummary": "{count} فرصة · {amount} ر.س متوقعة",
+  "@pipelineSummary": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "overdueCount": "{count} متأخرة",
+  "@overdueCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "amountExpected": "{amount} ر.س متوقعة",
+  "@amountExpected": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "vatNumberLine": "الرقم الضريبي: {number}",
+  "@vatNumberLine": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "legendPaid": "مدفوعة {amount}",
+  "@legendPaid": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "legendDue": "مستحقة {amount}",
+  "@legendDue": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "legendLate": "متأخرة {amount}",
+  "@legendLate": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "invoiceNumberValue": "رقم {number}",
+  "@invoiceNumberValue": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "customerAndInvoice": "{customer} · فاتورة رقم {number}",
+  "@customerAndInvoice": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      },
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "authEmailHint": "name@company.com",
+  "authPhoneCountryCode": "٩٦٦+",
+  "authPhoneHint": "٥٠ ٠٠٠ ٠٠٠٠",
+  "authDemoBrandName": "[اسم شركتك]",
+  "authDemoBrandInitial": "ن",
+  "authDemoWorkspaceHandle": "alnokhba",
+  "opportunityLine": "الفرصة: {title}",
+  "@opportunityLine": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "lineQtyPrice": "{qty} × {price}",
+  "@lineQtyPrice": {
+    "placeholders": {
+      "qty": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "glyphPlus": "+",
+  "glyphMinus": "−",
+  "monthName": "{month, select, jan{يناير} feb{فبراير} mar{مارس} apr{أبريل} may{مايو} jun{يونيو} jul{يوليو} aug{أغسطس} sep{سبتمبر} oct{أكتوبر} nov{نوفمبر} dec{ديسمبر} other{}}",
+  "@monthName": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "dateDayMonth": "{day} {month}",
+  "@dateDayMonth": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "dateDayMonthYear": "{day} {month} {year}",
+  "@dateDayMonthYear": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "month": {
+        "type": "String"
+      },
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "newLeadValueHint": "٠",
+  "salesGrowthBadge": "↑ {value}٪",
+  "@salesGrowthBadge": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "amountThousands": "{count} ألف",
+  "@amountThousands": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "retry": "إعادة المحاولة",
+  "errorNetwork": "تعذّر الاتصال بالإنترنت. تحقق من الشبكة وحاول مرة أخرى",
+  "errorServer": "حدث خطأ في الخادم. حاول مرة أخرى لاحقاً",
+  "errorNotFound": "لم نعثر على المطلوب",
+  "errorUnauthorized": "انتهت الجلسة. سجّل دخولك من جديد",
+  "errorValidation": "راجع البيانات المُدخلة وحاول مرة أخرى",
+  "errorUnknown": "حدث خطأ غير متوقع. حاول مرة أخرى",
+  "clockTime": "{hour}:{minute} {period}",
+  "@clockTime": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      },
+      "minute": {
+        "type": "String"
+      },
+      "period": {
+        "type": "String"
+      }
+    }
+  },
+  "timePeriodAm": "ص",
+  "timePeriodPm": "م",
+  "relativeJustNow": "الآن",
+  "relativeToday": "اليوم",
+  "relativeTomorrow": "غداً",
+  "relativeMinutesAgo": "{count, plural, =1{منذ دقيقة} =2{منذ دقيقتين} few{منذ {formatted} دقائق} other{منذ {formatted} دقيقة}}",
+  "@relativeMinutesAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "relativeHoursAgo": "{count, plural, =1{منذ ساعة} =2{منذ ساعتين} few{منذ {formatted} ساعات} other{منذ {formatted} ساعة}}",
+  "@relativeHoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "relativeDaysAgo": "{count, plural, =1{أمس} =2{منذ يومين} few{منذ {formatted} أيام} other{منذ {formatted} يوماً}}",
+  "@relativeDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "overdueSinceDays": "{count, plural, =0{مستحقة اليوم} =1{مستحقة منذ يوم} =2{مستحقة منذ يومين} few{مستحقة منذ {formatted} أيام} other{مستحقة منذ {formatted} يوماً}}",
+  "@overdueSinceDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "activityDetailLine": "{first} · {second}",
+  "@activityDetailLine": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "weekdayName": "{day, select, mon{الاثنين} tue{الثلاثاء} wed{الأربعاء} thu{الخميس} fri{الجمعة} sat{السبت} sun{الأحد} other{}}",
+  "@weekdayName": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "dealNextActionWhen": "{title} — {when}",
+  "@dealNextActionWhen": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "dealNextActionTodayAt": "{title} اليوم {time}",
+  "@dealNextActionTodayAt": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "dealQuoteExpiresInDays": "انتهاء العرض بعد {days} أيام",
+  "@dealQuoteExpiresInDays": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "dealQuoteExpiresToday": "انتهاء العرض اليوم",
+  "dealQuoteExpiresTomorrow": "انتهاء العرض غداً",
+  "dealExpectedCloseOn": "الإغلاق المتوقع {date}",
+  "@dealExpectedCloseOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dealNoNextAction": "لا توجد خطوة تالية",
+  "dueInDaysCount": "{count, plural, =0{تستحق اليوم} =1{مستحقة خلال يوم} =2{مستحقة خلال يومين} few{مستحقة خلال {formatted} أيام} other{مستحقة خلال {formatted} يوماً}}",
+  "@dueInDaysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentTermsWithinDays": "خلال {days} يوماً",
+  "@paymentTermsWithinDays": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "receiptAttached": "تم إرفاق صورة الإيصال",
+  "paidPartially": "مدفوعة جزئياً",
+  "quoteViewedBanner": "فتح العميل العرض {viewed} · صالح حتى {validUntil}",
+  "@quoteViewedBanner": {
+    "placeholders": {
+      "viewed": {
+        "type": "String"
+      },
+      "validUntil": {
+        "type": "String"
+      }
+    }
+  },
+  "quoteViewedToday": "اليوم {time}",
+  "@quoteViewedToday": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "quoteViewedOn": "{date} {time}",
+  "@quoteViewedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "loginBiometricNeedsPassword": "سجّل الدخول بالبريد وكلمة المرور أولاً",
+  "invoicesSearchHint": "ابحث برقم الفاتورة أو العميل",
+  "closeSearch": "إغلاق البحث",
+  "selectPeriod": "اختيار الفترة",
+  "periodLastMonth": "الشهر الماضي",
+  "periodThisYear": "هذه السنة",
+  "periodAllTime": "كل الفترات",
+  "productCatalogTitle": "من قائمة المنتجات",
+  "customItemTitle": "بند مخصص",
+  "itemNameLabel": "اسم البند",
+  "itemNameHint": "مثال: خدمة استشارية",
+  "unitPriceLabel": "سعر الوحدة",
+  "addToInvoice": "إضافة إلى الفاتورة",
+  "removeLine": "حذف البند",
+  "noProducts": "لا توجد منتجات في القائمة",
+  "settingsTitle": "الحساب",
+  "settingsOpenAccount": "فتح الحساب والإعدادات",
+  "settingsWorkspace": "مساحة العمل",
+  "settingsWorkspaceUrl": "رابط المساحة",
+  "settingsLanguage": "اللغة",
+  "settingsSignOut": "تسجيل الخروج",
+  "settingsSignOutTitle": "تسجيل الخروج؟",
+  "settingsSignOutBody": "ستحتاج إلى تسجيل الدخول من جديد للوصول إلى مساحة عملك.",
+  "settingsSignOutConfirm": "تسجيل الخروج",
+  "settingsCancel": "إلغاء",
+  "customersCount": "{count} عميل",
+  "@customersCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "customersSearchHint": "ابحث باسم العميل أو المدينة",
+  "customersEmpty": "لا يوجد عملاء بعد",
+  "customersNoResults": "لا توجد نتائج مطابقة",
+  "customerOpenDealsCount": "{count} فرص مفتوحة",
+  "@customerOpenDealsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "customerDuePill": "مستحق {amount}",
+  "@customerDuePill": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "customerAddress": "العنوان",
+  "customerSector": "القطاع",
+  "customerSince": "عميل منذ",
+  "customerNoDeals": "لا توجد فرص لهذا العميل",
+  "customerNoInvoices": "لا توجد فواتير لهذا العميل",
+  "customerInvoiceTitle": "فاتورة رقم {number}",
+  "@customerInvoiceTitle": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "number": 142,
+      "customer": "مصنع الأغذية الحديثة",
+      "dealTitle": "توريد خط تعبئة",
+      "dealId": "d-4",
+      "status": "sent",
+      "validUntil": "2026-10-31",
+      "lines": [
+        {
+          "name": "خط تعبئة آلي",
+          "unitPrice": 58000,
+          "quantity": 1
+        },
+        {
+          "name": "التركيب والتدريب",
+          "unitPrice": 7000,
+          "quantity": 1
+        }
+      ],
+      "viewedAt": "2026-10-17T09:15:00"
+    }
+  ]
+}

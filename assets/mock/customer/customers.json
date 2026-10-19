@@ -1,0 +1,193 @@
+{
+  "data": [
+    {
+      "id": "c-modern-foods",
+      "name": "مصنع الأغذية الحديثة",
+      "location": "الرياض · قطاع الصناعة",
+      "city": "الرياض",
+      "sector": "الصناعة",
+      "phone": "+966 11 234 5678",
+      "email": "info@modernfoods.sa",
+      "address": "حي المدينة الصناعية، طريق الخرج، الرياض",
+      "commercialRegistration": "1010123456",
+      "vatNumber": "٣٠٠٠٠٠٠٠٠٠٠٠٠٣",
+      "customerSince": "2024-03-12",
+      "accountOwner": "محمد",
+      "totalSales": 215000,
+      "amountDue": 12650,
+      "openDeals": 2,
+      "activity": [
+        {
+          "id": "a-1",
+          "kind": "quoteSent",
+          "title": "أُرسل عرض السعر رقم ١٤٢",
+          "amount": 65000,
+          "hoursAgo": 2
+        },
+        {
+          "id": "a-2",
+          "kind": "call",
+          "title": "مكالمة مع مدير المشتريات",
+          "detail": "طلب تعديل مدة التوريد",
+          "daysAgo": 1
+        },
+        {
+          "id": "a-3",
+          "kind": "invoiceOverdue",
+          "title": "الفاتورة رقم ٣٨٨ متأخرة",
+          "amount": 12650,
+          "daysAgo": 5
+        }
+      ]
+    },
+    {
+      "id": "c-united-supplies",
+      "name": "مؤسسة التوريدات المتحدة",
+      "location": "جدة · قطاع التجارة والتوزيع",
+      "city": "جدة",
+      "sector": "التجارة والتوزيع",
+      "phone": "+966 12 345 6789",
+      "email": "sales@unitedsupplies.sa",
+      "address": "حي الروضة، شارع الأمير سلطان، جدة",
+      "commercialRegistration": "4030234567",
+      "vatNumber": "٣١٠٠٠٠٠٠٠٠٠٠٠٣",
+      "customerSince": "2023-09-04",
+      "accountOwner": "محمد",
+      "totalSales": 168000,
+      "amountDue": 14375,
+      "openDeals": 2,
+      "activity": [
+        {
+          "id": "a-1",
+          "kind": "call",
+          "title": "مكالمة متابعة مع مدير العمليات",
+          "detail": "مراجعة شروط التوسعة",
+          "hoursAgo": 3
+        },
+        {
+          "id": "a-2",
+          "kind": "quoteSent",
+          "title": "أُرسل عرض السعر رقم ١٣٧",
+          "amount": 20000,
+          "daysAgo": 2
+        }
+      ]
+    },
+    {
+      "id": "c-fast-food",
+      "name": "مطاعم الوجبات السريعة",
+      "location": "الدمام · قطاع الخدمات",
+      "city": "الدمام",
+      "sector": "الخدمات",
+      "phone": "+966 13 456 7890",
+      "email": "hello@fastfood.sa",
+      "address": "حي الشاطئ، طريق الكورنيش، الدمام",
+      "commercialRegistration": "2050345678",
+      "vatNumber": "٣١٠٠٠٠٠٠٠٠٠٠٠٣",
+      "customerSince": "2025-01-20",
+      "accountOwner": "محمد",
+      "totalSales": 54000,
+      "amountDue": 0,
+      "openDeals": 1,
+      "activity": [
+        {
+          "id": "a-1",
+          "kind": "call",
+          "title": "مكالمة تعارف مع المدير العام",
+          "daysAgo": 1
+        }
+      ]
+    },
+    {
+      "id": "c-logistics",
+      "name": "شركة الخدمات اللوجستية",
+      "location": "الرياض · قطاع الخدمات",
+      "city": "الرياض",
+      "sector": "الخدمات",
+      "phone": "+966 11 567 8901",
+      "email": "contact@logistics.sa",
+      "address": "حي السلي، شارع الصناعة، الرياض",
+      "commercialRegistration": "1010456789",
+      "vatNumber": "٣١٠٠٠٠٠٠٠٠٠٠٠٣",
+      "customerSince": "2024-06-18",
+      "accountOwner": "سارة",
+      "totalSales": 96000,
+      "amountDue": 7175,
+      "openDeals": 2,
+      "activity": [
+        {
+          "id": "a-1",
+          "kind": "quoteSent",
+          "title": "أُرسل عرض السعر رقم ١٣٩",
+          "amount": 31500,
+          "daysAgo": 1
+        },
+        {
+          "id": "a-2",
+          "kind": "call",
+          "title": "مكالمة مع مدير المستودعات",
+          "detail": "زيارة الموقع الأسبوع القادم",
+          "daysAgo": 3
+        }
+      ]
+    },
+    {
+      "id": "c-golden-realty",
+      "name": "مجموعة العقارات الذهبية",
+      "location": "جدة · قطاع العقارات",
+      "city": "جدة",
+      "sector": "العقارات",
+      "phone": "+966 12 678 9012",
+      "email": "office@goldenrealty.sa",
+      "address": "حي الشاطئ، طريق الملك، جدة",
+      "commercialRegistration": "4030567890",
+      "vatNumber": "٣١٠٠٠٠٠٠٠٠٠٠٠٣",
+      "customerSince": "2022-11-30",
+      "accountOwner": "علي",
+      "totalSales": 142000,
+      "amountDue": 0,
+      "openDeals": 1,
+      "activity": [
+        {
+          "id": "a-1",
+          "kind": "quoteSent",
+          "title": "أُرسل عرض السعر رقم ١٤٠",
+          "amount": 24000,
+          "hoursAgo": 5
+        },
+        {
+          "id": "a-2",
+          "kind": "call",
+          "title": "مكالمة مع مدير الحسابات",
+          "daysAgo": 4
+        }
+      ]
+    },
+    {
+      "id": "c-noor-trading",
+      "name": "شركة النور للتجارة",
+      "location": "المدينة المنورة · قطاع التجارة",
+      "city": "المدينة المنورة",
+      "sector": "التجارة",
+      "phone": "+966 14 789 0123",
+      "email": "info@alnoor.sa",
+      "address": "حي العزيزية، شارع قباء، المدينة المنورة",
+      "commercialRegistration": "4650678901",
+      "vatNumber": "٣١٠٠٠٠٠٠٠٠٠٠٠٣",
+      "customerSince": "2026-09-02",
+      "accountOwner": "سارة",
+      "totalSales": 0,
+      "amountDue": 0,
+      "openDeals": 0,
+      "activity": [
+        {
+          "id": "a-1",
+          "kind": "call",
+          "title": "مكالمة تعارف",
+          "detail": "عميل جديد بانتظار أول عرض",
+          "daysAgo": 2
+        }
+      ]
+    }
+  ]
+}

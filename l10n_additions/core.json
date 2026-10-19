@@ -1,0 +1,20 @@
+{
+  "ar": {
+    "retry": "إعادة المحاولة",
+    "errorNetwork": "تعذّر الاتصال بالإنترنت. تحقق من الشبكة وحاول مرة أخرى",
+    "errorServer": "حدث خطأ في الخادم. حاول مرة أخرى لاحقاً",
+    "errorNotFound": "لم نعثر على المطلوب",
+    "errorUnauthorized": "انتهت الجلسة. سجّل دخولك من جديد",
+    "errorValidation": "راجع البيانات المُدخلة وحاول مرة أخرى",
+    "errorUnknown": "حدث خطأ غير متوقع. حاول مرة أخرى"
+  },
+  "en": {
+    "retry": "Try again",
+    "errorNetwork": "Can't reach the internet. Check your connection and try again",
+    "errorServer": "Something went wrong on our side. Please try again later",
+    "errorNotFound": "We couldn't find what you were looking for",
+    "errorUnauthorized": "Your session has expired. Please sign in again",
+    "errorValidation": "Please review the details you entered and try again",
+    "errorUnknown": "Something unexpected happened. Please try again"
+  }
+}

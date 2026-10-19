@@ -1,0 +1,69 @@
+{
+  "data": {
+    "stages": [
+      { "stage": "newLead", "count": 6, "totalValue": 27500 },
+      { "stage": "qualified", "count": 5, "totalValue": 42000 },
+      { "stage": "quote", "count": 4, "totalValue": 120500 },
+      { "stage": "negotiation", "count": 3, "totalValue": 20000 },
+      { "stage": "won", "count": 9, "totalValue": 38000 }
+    ],
+    "deals": [
+      {
+        "id": "d-1", "title": "نظام نقاط بيع لفرعين", "stage": "newLead",
+        "customerId": "c-fast-food", "customerName": "مطاعم الوجبات السريعة",
+        "value": 18000, "probability": 20,
+        "ownerId": "u-1", "ownerName": "محمد",
+        "nextAction": { "title": "مكالمة تعارف", "dayOffset": 1 }
+      },
+      {
+        "id": "d-2", "title": "توريد أجهزة مكتبية", "stage": "newLead",
+        "customerId": "c-logistics", "customerName": "شركة الخدمات اللوجستية",
+        "value": 9500, "probability": 15,
+        "ownerId": "u-2", "ownerName": "سارة",
+        "nextAction": { "title": "إرسال الكتالوج" }
+      },
+      {
+        "id": "d-3", "title": "عقد صيانة سنوي", "stage": "qualified",
+        "customerId": "c-united-supplies", "customerName": "مؤسسة التوريدات المتحدة",
+        "value": 42000, "probability": 45,
+        "ownerId": "u-1", "ownerName": "محمد",
+        "nextAction": { "title": "اجتماع", "dayOffset": 0, "time": "13:00" }
+      },
+      {
+        "id": "d-4", "title": "توريد خط تعبئة", "stage": "quote",
+        "customerId": "c-modern-foods", "customerName": "مصنع الأغذية الحديثة",
+        "value": 65000, "probability": 60,
+        "ownerId": "u-1", "ownerName": "محمد",
+        "nextAction": { "title": "متابعة العرض", "dayOffset": 0 }
+      },
+      {
+        "id": "d-5", "title": "اشتراك برمجيات ١٢ شهراً", "stage": "quote",
+        "customerId": "c-golden-realty", "customerName": "مجموعة العقارات الذهبية",
+        "value": 24000, "probability": 55,
+        "ownerId": "u-3", "ownerName": "علي",
+        "quoteExpiresInDays": 3
+      },
+      {
+        "id": "d-6", "title": "تجهيز مستودع", "stage": "quote",
+        "customerId": "c-logistics", "customerName": "شركة الخدمات اللوجستية",
+        "value": 31500, "probability": 50,
+        "ownerId": "u-2", "ownerName": "سارة",
+        "nextAction": { "title": "زيارة موقع", "weekday": 7 }
+      },
+      {
+        "id": "d-7", "title": "توسعة نظام المبيعات", "stage": "negotiation",
+        "customerId": "c-united-supplies", "customerName": "مؤسسة التوريدات المتحدة",
+        "value": 20000, "probability": 80,
+        "ownerId": "u-1", "ownerName": "محمد",
+        "nextAction": { "title": "مراجعة الخصم" }
+      },
+      {
+        "id": "d-8", "title": "توريد معدات", "stage": "won",
+        "customerId": "c-modern-foods", "customerName": "مصنع الأغذية الحديثة",
+        "value": 38000, "probability": 100,
+        "ownerId": "u-1", "ownerName": "محمد",
+        "nextAction": { "title": "تحويل إلى فاتورة" }
+      }
+    ]
+  }
+}

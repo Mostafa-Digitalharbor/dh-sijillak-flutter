@@ -1,0 +1,6 @@
+{
+  "data": {
+    "customer": { "id": "c-modern-foods", "name": "مصنع الأغذية الحديثة" },
+    "owner": { "id": "u-1", "name": "محمد" }
+  }
+}
