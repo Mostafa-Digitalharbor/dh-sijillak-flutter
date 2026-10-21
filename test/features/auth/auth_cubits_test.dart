@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sijilak/core/error/failure.dart';
+import 'package:sijilak/core/network/auth_tokens.dart';
 import 'package:sijilak/core/utils/result.dart';
 import 'package:sijilak/core/utils/view_status.dart';
 import 'package:sijilak/features/auth/data/repositories/noop_biometric_authenticator.dart';
@@ -11,6 +12,7 @@ import 'package:sijilak/features/auth/domain/entities/otp_verification.dart';
 import 'package:sijilak/features/auth/domain/entities/registration_draft.dart';
 import 'package:sijilak/features/auth/domain/entities/workspace.dart';
 import 'package:sijilak/features/auth/domain/repositories/auth_repository.dart';
+import 'package:sijilak/features/auth/domain/usecases/can_use_biometrics_use_case.dart';
 import 'package:sijilak/features/auth/domain/usecases/check_workspace_handle_use_case.dart';
 import 'package:sijilak/features/auth/domain/usecases/login_use_case.dart';
 import 'package:sijilak/features/auth/domain/usecases/login_with_biometrics_use_case.dart';
@@ -72,7 +74,8 @@ class _FakeRepository implements AuthRepository {
       _result(_session);
 
   @override
-  Future<Result<AuthSession>> loginWithBiometrics() async => _result(_session);
+  Future<Result<AuthTokens>> refreshTokens(String refreshToken) async =>
+      _result(const AuthTokens(accessToken: 'a', refreshToken: 'r'));
 }
 
 /// Real-time wait that comfortably outlasts the cubits' 10 ms test debounce
@@ -251,6 +254,7 @@ void main() {
           const NoopBiometricAuthenticator(),
           store,
         ),
+        const CanUseBiometricsUseCase(NoopBiometricAuthenticator()),
       );
       addTearDown(cubit.close);
       cubit
@@ -271,6 +275,7 @@ void main() {
           const NoopBiometricAuthenticator(),
           store,
         ),
+        const CanUseBiometricsUseCase(NoopBiometricAuthenticator()),
       );
       addTearDown(cubit.close);
       await cubit.signIn();

@@ -22,9 +22,11 @@ import '../../features/invoices/presentation/view/invoice_detail_screen.dart';
 import '../../features/invoices/presentation/view/invoices_screen.dart';
 import '../../features/invoices/presentation/view/new_invoice_screen.dart';
 import '../../features/invoices/presentation/view/payment_done_screen.dart';
+import '../../features/notifications/presentation/view/notifications_screen.dart';
 import '../../features/pipeline/presentation/view/new_lead_screen.dart';
 import '../../features/pipeline/presentation/view/pipeline_screen.dart';
 import '../../features/quote/presentation/view/quote_screen.dart';
+import '../../features/search/presentation/view/search_screen.dart';
 import 'app_routes.dart';
 
 /// Routes only a signed-in user may open.
@@ -40,6 +42,8 @@ const _protectedPaths = {
   AppRoutes.invoice,
   AppRoutes.paymentDone,
   AppRoutes.account,
+  AppRoutes.notifications,
+  AppRoutes.search,
 };
 
 /// Routes that make no sense once signed in.
@@ -124,7 +128,10 @@ GoRouter createAppRouter({
       path: AppRoutes.customer,
       builder: (_, state) => CustomerScreen(customerId: state.extra as String?),
     ),
-    GoRoute(path: AppRoutes.newLead, builder: (_, _) => const NewLeadScreen()),
+    GoRoute(
+      path: AppRoutes.newLead,
+      builder: (_, state) => NewLeadScreen(customerId: state.extra as String?),
+    ),
     GoRoute(path: AppRoutes.quote, builder: (_, _) => const QuoteScreen()),
     GoRoute(
       path: AppRoutes.newInvoice,
@@ -138,6 +145,11 @@ GoRouter createAppRouter({
       path: AppRoutes.paymentDone,
       builder: (_, _) => const PaymentDoneScreen(),
     ),
+    GoRoute(
+      path: AppRoutes.notifications,
+      builder: (_, _) => const NotificationsScreen(),
+    ),
+    GoRoute(path: AppRoutes.search, builder: (_, _) => const SearchScreen()),
     GoRoute(path: AppRoutes.account, builder: (_, _) => const AccountScreen()),
   ],
 );

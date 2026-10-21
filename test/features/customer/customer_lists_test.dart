@@ -11,6 +11,7 @@ import 'package:sijilak/features/customer/domain/entities/customer.dart';
 import 'package:sijilak/features/customer/domain/entities/customer_deal.dart';
 import 'package:sijilak/features/customer/domain/entities/customer_invoice.dart';
 import 'package:sijilak/features/customer/domain/entities/customer_summary.dart';
+import 'package:sijilak/features/customer/domain/entities/new_customer.dart';
 import 'package:sijilak/features/customer/domain/repositories/customer_repository.dart';
 import 'package:sijilak/features/customer/domain/usecases/get_customer_deals_use_case.dart';
 import 'package:sijilak/features/customer/domain/usecases/get_customer_invoices_use_case.dart';
@@ -50,6 +51,10 @@ class _FailingRepository implements CustomerRepository {
     customerCalls++;
     return const Failed(NetworkFailure());
   }
+
+  @override
+  Future<Result<Customer>> createCustomer(NewCustomer customer) async =>
+      const Failed(NetworkFailure());
 
   @override
   Future<Result<List<CustomerDeal>>> getDeals(String id) async {

@@ -1,0 +1,5 @@
+{
+  "API_BASE_URL": "https://api.dev.sijilak.example",
+  "USE_MOCK_BACKEND": true,
+  "APP_LOCALE": "ar"
+}

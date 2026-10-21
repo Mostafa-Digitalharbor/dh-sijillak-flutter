@@ -3,6 +3,7 @@ import '../entities/customer.dart';
 import '../entities/customer_deal.dart';
 import '../entities/customer_invoice.dart';
 import '../entities/customer_summary.dart';
+import '../entities/new_customer.dart';
 
 /// Source of customer profiles and lists.
 abstract interface class CustomerRepository {
@@ -10,6 +11,9 @@ abstract interface class CustomerRepository {
   Future<Result<List<CustomerSummary>>> getCustomers(String query);
 
   Future<Result<Customer>> getCustomer(String id);
+
+  /// Adds [customer]; the result is the created profile.
+  Future<Result<Customer>> createCustomer(NewCustomer customer);
 
   /// The pipeline deals of customer [id].
   Future<Result<List<CustomerDeal>>> getDeals(String id);

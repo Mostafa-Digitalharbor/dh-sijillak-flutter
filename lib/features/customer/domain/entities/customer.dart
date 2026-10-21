@@ -1,6 +1,7 @@
 import 'package:equatable/equatable.dart';
 
 import 'customer_activity.dart';
+import 'customer_summary.dart';
 
 /// A customer profile with its headline figures and recent activity.
 class Customer extends Equatable {
@@ -49,6 +50,16 @@ class Customer extends Equatable {
 
   /// Most recent first.
   final List<CustomerActivity> activity;
+
+  /// This customer as a list row.
+  CustomerSummary toSummary() => CustomerSummary(
+    id: id,
+    name: name,
+    location: location,
+    openDeals: openDeals,
+    amountDue: amountDue,
+    vatNumber: vatNumber,
+  );
 
   @override
   List<Object?> get props => [

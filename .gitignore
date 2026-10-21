@@ -46,3 +46,44 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+
+# Secrets / signing - NEVER commit
+android/key.properties
+**/key.properties
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+env/*.secret.json
+env/*.secret
+.env
+.env.*
+google-services.json
+GoogleService-Info.plist
+
+# Build outputs
+/build/
+**/build/
+*.apk
+*.aab
+*.ipa
+*.dSYM.zip
+mapping.txt
+
+# Native build leftovers
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/macos/Flutter/ephemeral/
+.gradle/
+**/.cxx/
+.flutter-plugins
+.packages
+pubspec_overrides.yaml
+
+# Python tooling caches
+__pycache__/
+
+# NOTE: lib/l10n/gen/ is intentionally COMMITTED (see README, "Localisation").

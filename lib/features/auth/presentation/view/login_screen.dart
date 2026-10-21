@@ -33,7 +33,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => getIt<LoginCubit>(),
+      create: (_) => getIt<LoginCubit>()..loadBiometricAvailability(),
       child: BlocListener<LoginCubit, LoginState>(
         listenWhen: (previous, current) => previous.status != current.status,
         listener: (context, state) {
@@ -58,6 +58,9 @@ class _LoginView extends StatelessWidget {
     final cubit = context.read<LoginCubit>();
     final signingIn = context.select(
       (LoginCubit c) => c.state.status.isLoading,
+    );
+    final biometricsAvailable = context.select(
+      (LoginCubit c) => c.state.biometricsAvailable,
     );
     return AuthPage(
       blobs: AuthBlobs.login,
@@ -123,16 +126,18 @@ class _LoginView extends StatelessWidget {
                 enabled: !signingIn,
                 onPressed: cubit.signIn,
               ),
-              const SizedBox(height: AppSpacing.s14),
-              SecondaryButton(
-                label: l10n.signInFaceId,
-                icon: AppIcons.faceId,
-                height: AuthDimens.faceIdHeight,
-                radius: AuthDimens.loginButtonRadius,
-                fontSize: AuthDimens.faceIdFont,
-                fontWeight: FontWeight.w700,
-                onPressed: signingIn ? null : cubit.signInWithBiometrics,
-              ),
+              if (biometricsAvailable) ...[
+                const SizedBox(height: AppSpacing.s14),
+                SecondaryButton(
+                  label: l10n.signInFaceId,
+                  icon: AppIcons.faceId,
+                  height: AuthDimens.faceIdHeight,
+                  radius: AuthDimens.loginButtonRadius,
+                  fontSize: AuthDimens.faceIdFont,
+                  fontWeight: FontWeight.w700,
+                  onPressed: signingIn ? null : cubit.signInWithBiometrics,
+                ),
+              ],
             ],
           ),
         ),

@@ -9,16 +9,13 @@ import '../../core/theme/app_fonts.dart';
 
 /// One destination of the bottom navigation bar.
 class NavTab {
-  const NavTab(this.path, this.label, this.icon, {this.push = false});
+  const NavTab(this.path, this.label, this.icon);
 
   final String path;
   final String label;
 
   /// Inner SVG markup from `AppIcons`.
   final String icon;
-
-  /// Opens above the shell (full screen) instead of switching tabs.
-  final bool push;
 }
 
 /// Icon + label button of the bottom navigation bar.
@@ -47,7 +44,7 @@ class NavItem extends StatelessWidget {
       excludeSemantics: true,
       child: InkWell(
         borderRadius: BorderRadius.circular(AppRadius.r16),
-        onTap: () => tab.push ? context.push(tab.path) : context.go(tab.path),
+        onTap: () => context.go(tab.path),
         child: SizedBox(
           width: width,
           height: AppSizes.navItemHeight,

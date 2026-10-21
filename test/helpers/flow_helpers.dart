@@ -11,6 +11,7 @@ import 'package:sijilak/l10n/gen/app_localizations_ar.dart';
 import 'package:sijilak/shared/widgets/glass_icon_button.dart';
 
 import 'pump_route.dart';
+import 'test_dependencies.dart';
 
 export 'pump_route.dart' show settle;
 
@@ -31,7 +32,7 @@ Future<void> bootApp(WidgetTester tester) async {
   applyDevice(tester, flowDevice);
   await loadAppFonts();
   SharedPreferences.setMockInitialValues({});
-  await configureDependencies(latency: Duration.zero);
+  await configureTestDependencies();
   appRouter = createAppRouter(
     sessionStore: getIt<SessionStore>(),
     requireAuth: true,

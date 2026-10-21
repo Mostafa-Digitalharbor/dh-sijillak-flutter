@@ -3,6 +3,7 @@ import '../models/customer_deal_model.dart';
 import '../models/customer_invoice_model.dart';
 import '../models/customer_model.dart';
 import '../models/customer_summary_model.dart';
+import '../models/new_customer_model.dart';
 import 'customer_endpoints.dart';
 
 /// Talks to the customers API.
@@ -10,6 +11,8 @@ abstract interface class CustomerRemoteDataSource {
   Future<List<CustomerSummaryModel>> fetchCustomers(String query);
 
   Future<CustomerModel> fetchCustomer(String id);
+
+  Future<CustomerModel> createCustomer(NewCustomerModel customer);
 
   Future<List<CustomerDealModel>> fetchDeals(String id);
 
@@ -37,6 +40,15 @@ class CustomerRemoteDataSourceImpl implements CustomerRemoteDataSource {
   Future<CustomerModel> fetchCustomer(String id) async =>
       CustomerModel.fromJson(
         (await _client.get(CustomerEndpoints.customer(id))).asJson,
+      );
+
+  @override
+  Future<CustomerModel> createCustomer(NewCustomerModel customer) async =>
+      CustomerModel.fromJson(
+        (await _client.post(
+          CustomerEndpoints.customers,
+          body: customer.toJson(),
+        )).asJson,
       );
 
   @override

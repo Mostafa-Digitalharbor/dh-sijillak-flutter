@@ -1,0 +1,44 @@
+{
+  "ar": {
+    "searchRecentTitle": "البحث الأخير",
+    "searchClearRecent": "مسح",
+    "searchIdleTitle": "ابحث في كل شيء",
+    "searchIdleHint": "ابحث عن العملاء والفرص والفواتير وعروض الأسعار من مكان واحد.",
+    "searchGroupQuotes": "عروض الأسعار",
+    "searchSectionHeading": "{title} ({count})",
+    "@searchSectionHeading": {
+      "placeholders": {
+        "title": {"type": "String"},
+        "count": {"type": "String"}
+      }
+    },
+    "searchNoResultsTitle": "لا توجد نتائج لـ «{query}»",
+    "@searchNoResultsTitle": {
+      "placeholders": {
+        "query": {"type": "String"}
+      }
+    },
+    "searchNoResultsHint": "جرّب اسم العميل أو رقم الفاتورة أو عنوان الفرصة."
+  },
+  "en": {
+    "searchRecentTitle": "Recent searches",
+    "searchClearRecent": "Clear",
+    "searchIdleTitle": "Search everything",
+    "searchIdleHint": "Find customers, deals, invoices and quotes from one place.",
+    "searchGroupQuotes": "Quotes",
+    "searchSectionHeading": "{title} ({count})",
+    "@searchSectionHeading": {
+      "placeholders": {
+        "title": {"type": "String"},
+        "count": {"type": "String"}
+      }
+    },
+    "searchNoResultsTitle": "No results for \"{query}\"",
+    "@searchNoResultsTitle": {
+      "placeholders": {
+        "query": {"type": "String"}
+      }
+    },
+    "searchNoResultsHint": "Try a customer name, an invoice number or a deal title."
+  }
+}

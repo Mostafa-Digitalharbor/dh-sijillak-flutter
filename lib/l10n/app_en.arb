@@ -667,5 +667,133 @@
         "type": "String"
       }
     }
-  }
+  },
+  "notifMarkAllRead": "Mark all as read",
+  "notifEmptyTitle": "No notifications",
+  "notifEmptyHint": "Alerts about quotes, invoices and tasks will show up here.",
+  "notifGroupYesterday": "Yesterday",
+  "notifGroupEarlier": "Earlier",
+  "notifUnreadMark": "Unread",
+  "notifBellUnread": "{count, plural, =1{Notifications, 1 unread} other{Notifications, {formatted} unread}}",
+  "@notifBellUnread": {
+    "placeholders": {
+      "formatted": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifQuoteViewedTitle": "{customer} viewed your quote",
+  "@notifQuoteViewedTitle": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifQuoteApprovedTitle": "{customer} approved your quote",
+  "@notifQuoteApprovedTitle": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifQuoteBody": "Quote no. {number} · {amount}",
+  "@notifQuoteBody": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "notifInvoiceOverdueTitle": "Invoice no. {number} is overdue",
+  "@notifInvoiceOverdueTitle": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPaymentReceivedTitle": "Payment received from {customer}",
+  "@notifPaymentReceivedTitle": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPaymentReceivedBody": "{amount} for invoice no. {number}",
+  "@notifPaymentReceivedBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "notifTaskReminderTitle": "Task reminder",
+  "notifDealWonTitle": "Deal won with {customer}",
+  "@notifDealWonTitle": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifJoinedBody": "{first} · {second}",
+  "@notifJoinedBody": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "customerPickerTitle": "Choose a customer",
+  "newCustomerTitle": "New customer",
+  "newCustomerNameLabel": "Customer name",
+  "newCustomerNameHint": "Company or customer name",
+  "newCustomerSectorNone": "Not specified",
+  "newCustomerSave": "Save customer",
+  "dealPickerTitle": "Choose a deal",
+  "dealPickerEmpty": "No open deals for this customer",
+  "dealPickerNew": "+ New deal",
+  "searchRecentTitle": "Recent searches",
+  "searchClearRecent": "Clear",
+  "searchIdleTitle": "Search everything",
+  "searchIdleHint": "Find customers, deals, invoices and quotes from one place.",
+  "searchGroupQuotes": "Quotes",
+  "searchSectionHeading": "{title} ({count})",
+  "@searchSectionHeading": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultsTitle": "No results for \"{query}\"",
+  "@searchNoResultsTitle": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultsHint": "Try a customer name, an invoice number or a deal title.",
+  "biometricReason": "Confirm your identity to sign in to Sijilak",
+  "loginBiometricUnavailable": "No fingerprint or face is set up on this device. Enable it in device settings or sign in with your password",
+  "loginBiometricLockedOut": "Biometric sign-in is temporarily locked after too many attempts. Try again later or use your password"
 }

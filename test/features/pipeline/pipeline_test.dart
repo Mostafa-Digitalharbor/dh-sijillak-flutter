@@ -1,10 +1,14 @@
 import 'package:flutter_test/flutter_test.dart';
+
+import '../../helpers/fake_customer_repository.dart';
+
 import 'package:sijilak/core/error/failure.dart';
 import 'package:sijilak/core/network/mock/mock_api_client.dart';
 import 'package:sijilak/core/network/mock/mock_assets.dart';
 import 'package:sijilak/core/usecase/usecase.dart';
 import 'package:sijilak/core/utils/result.dart';
 import 'package:sijilak/core/utils/view_status.dart';
+import 'package:sijilak/features/customer/domain/usecases/get_customer_use_case.dart';
 import 'package:sijilak/features/pipeline/data/datasources/pipeline_mock_api.dart';
 import 'package:sijilak/features/pipeline/data/datasources/pipeline_remote_data_source.dart';
 import 'package:sijilak/features/pipeline/data/models/new_deal_model.dart';
@@ -360,6 +364,7 @@ void main() {
         GetLeadDefaultsUseCase(repository),
         CreateDealUseCase(repository),
         CreateQuoteForDealUseCase(quotes ?? _FakeQuotes()),
+        GetCustomerUseCase(FakeCustomerRepository()),
       );
       addTearDown(cubit.close);
       return cubit;
@@ -490,6 +495,7 @@ void main() {
         GetLeadDefaultsUseCase(repository),
         CreateDealUseCase(repository),
         CreateQuoteForDealUseCase(_FakeQuotes()),
+        GetCustomerUseCase(FakeCustomerRepository()),
       );
       addTearDown(cubit.close);
       await cubit.load();

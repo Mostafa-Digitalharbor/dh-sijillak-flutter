@@ -13,6 +13,7 @@ import 'package:sijilak/l10n/gen/app_localizations_en.dart';
 
 import '../../helpers/pump_route.dart';
 import 'account_fixtures.dart';
+import '../../helpers/test_dependencies.dart';
 
 const _device = DeviceSpec('phone', Size(390, 844));
 
@@ -24,7 +25,7 @@ Future<void> _openAccount(WidgetTester tester, String savedLanguage) async {
   SharedPreferences.setMockInitialValues({
     LocalePreferencesKeys.language: savedLanguage,
   });
-  await configureDependencies(latency: Duration.zero);
+  await configureTestDependencies();
   getIt<SessionStore>().save(accountSession);
   appRouter = createAppRouter(
     sessionStore: getIt<SessionStore>(),

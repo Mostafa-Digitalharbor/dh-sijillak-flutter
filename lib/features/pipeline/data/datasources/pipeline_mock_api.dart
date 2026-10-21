@@ -1,6 +1,7 @@
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/network/mock/mock_assets.dart';
 import '../../../../core/network/mock/mock_route.dart';
+import '../../../customer/data/datasources/customer_mock_store.dart';
 import '../../domain/entities/deal_stage.dart';
 import 'pipeline_endpoints.dart';
 import 'pipeline_mock_store.dart';
@@ -52,12 +53,13 @@ class PipelineMockApi implements MockApiModule {
     final title = (body['title'] as String?)?.trim() ?? '';
     final value = (body['value'] as num?)?.toInt() ?? 0;
     final stage = DealStage.values.asNameMap()[body['stage']];
+    final customer = await CustomerMockStore.of(_assets)
+        .find(body['customerId']);
     final errors = <String, String>{
       if (title.isEmpty) 'title': 'required',
       if (value <= 0) 'value': 'invalid',
       if (stage == null) 'stage': 'invalid',
-      if (!state.customers.containsKey(body['customerId']))
-        'customerId': 'unknown',
+      if (customer == null) 'customerId': 'unknown',
       if (!state.owners.containsKey(body['ownerId'])) 'ownerId': 'unknown',
     };
     if (errors.isNotEmpty) throw ValidationException(fields: errors);
@@ -68,7 +70,7 @@ class PipelineMockApi implements MockApiModule {
       'title': title,
       'stage': stage!.name,
       'customerId': body['customerId'],
-      'customerName': state.customers[body['customerId']],
+      'customerName': customer!['name'],
       'value': value,
       'probability': _stageProbability[stage],
       'ownerId': body['ownerId'],

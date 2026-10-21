@@ -8,6 +8,7 @@ class CustomerSummaryModel {
     required this.location,
     required this.openDeals,
     required this.amountDue,
+    this.vatNumber = '',
   });
 
   factory CustomerSummaryModel.fromJson(Map<String, dynamic> json) =>
@@ -17,6 +18,7 @@ class CustomerSummaryModel {
         location: json['location'] as String,
         openDeals: (json['openDeals'] as num).toInt(),
         amountDue: (json['amountDue'] as num).toInt(),
+        vatNumber: json['vatNumber'] as String? ?? '',
       );
 
   final String id;
@@ -24,6 +26,7 @@ class CustomerSummaryModel {
   final String location;
   final int openDeals;
   final int amountDue;
+  final String vatNumber;
 
   Map<String, dynamic> toJson() => {
     'id': id,
@@ -31,6 +34,7 @@ class CustomerSummaryModel {
     'location': location,
     'openDeals': openDeals,
     'amountDue': amountDue,
+    'vatNumber': vatNumber,
   };
 
   CustomerSummary toEntity() => CustomerSummary(
@@ -39,5 +43,6 @@ class CustomerSummaryModel {
     location: location,
     openDeals: openDeals,
     amountDue: amountDue,
+    vatNumber: vatNumber,
   );
 }

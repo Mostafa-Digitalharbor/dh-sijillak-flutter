@@ -1,0 +1,12 @@
+{
+  "ar": {
+    "biometricReason": "أكّد هويتك لتسجيل الدخول إلى سجلّك",
+    "loginBiometricUnavailable": "لا توجد بصمة أو وجه مسجّل على هذا الجهاز. فعّلها من إعدادات الجهاز أو سجّل الدخول بكلمة المرور",
+    "loginBiometricLockedOut": "تم قفل التحقق الحيوي مؤقتاً بعد محاولات كثيرة. حاول لاحقاً أو سجّل الدخول بكلمة المرور"
+  },
+  "en": {
+    "biometricReason": "Confirm your identity to sign in to Sijilak",
+    "loginBiometricUnavailable": "No fingerprint or face is set up on this device. Enable it in device settings or sign in with your password",
+    "loginBiometricLockedOut": "Biometric sign-in is temporarily locked after too many attempts. Try again later or use your password"
+  }
+}

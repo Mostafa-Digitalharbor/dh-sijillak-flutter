@@ -9,6 +9,8 @@ import 'package:sijilak/core/routing/app_router.dart';
 import 'package:sijilak/features/auth/domain/entities/auth_session.dart';
 import 'package:sijilak/features/auth/domain/repositories/session_store.dart';
 
+import 'test_dependencies.dart';
+
 /// A device configuration a screen must survive without layout errors.
 class DeviceSpec {
   const DeviceSpec(this.name, this.size, {this.textScale = 1, this.platform});
@@ -85,7 +87,7 @@ Future<void> pumpRoute(
   applyDevice(tester, spec);
   await loadAppFonts();
   SharedPreferences.setMockInitialValues({});
-  await configureDependencies(latency: Duration.zero);
+  await configureTestDependencies();
   if (session != null) getIt<SessionStore>().save(session);
   try {
     appRouter.go(route);

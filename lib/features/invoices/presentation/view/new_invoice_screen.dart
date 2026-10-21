@@ -14,6 +14,7 @@ import '../../../../shared/widgets/failure_snack_bar.dart';
 import '../../../../shared/widgets/glass_bottom_bar.dart';
 import '../../../../shared/widgets/screen_header.dart';
 import '../../../../shared/widgets/status_body.dart';
+import '../../../customer/presentation/widgets/customer_picker_sheet.dart';
 import '../constants/invoices_dimens.dart';
 import '../cubit/new_invoice_cubit.dart';
 import '../widgets/add_product_sheet.dart';
@@ -42,6 +43,14 @@ class _NewInvoiceView extends StatelessWidget {
     final cubit = context.read<NewInvoiceCubit>();
     final line = await showAddProductSheet(context);
     if (line != null) cubit.addLine(line);
+  }
+
+  Future<void> _changeCustomer(BuildContext context) async {
+    final cubit = context.read<NewInvoiceCubit>();
+    final customer = await showCustomerPickerSheet(context);
+    if (customer != null) {
+      cubit.changeCustomer(name: customer.name, vatNumber: customer.vatNumber);
+    }
   }
 
   @override
@@ -94,6 +103,7 @@ class _NewInvoiceView extends StatelessWidget {
                 onRetry: cubit.reload,
                 builder: (_) => NewInvoiceBody(
                   draft: draft!,
+                  onChangeCustomer: () => _changeCustomer(context),
                   onQuantityChanged: cubit.changeQuantity,
                   onAddProduct: () => _addProduct(context),
                   onRemoveLine: cubit.removeLine,

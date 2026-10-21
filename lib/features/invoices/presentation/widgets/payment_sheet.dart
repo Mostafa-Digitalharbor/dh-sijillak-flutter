@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../app/di/injection.dart';
 import '../../domain/entities/invoice_detail.dart';
 import '../cubit/payment_cubit.dart';
-import 'frosted_sheet.dart';
+import '../../../../shared/widgets/frosted_sheet.dart';
 import 'payment_sheet_content.dart';
 
 /// Bottom sheet for recording a payment against [invoice].

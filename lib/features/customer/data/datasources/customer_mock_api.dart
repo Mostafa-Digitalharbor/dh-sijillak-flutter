@@ -1,9 +1,9 @@
-import '../../../../core/error/exceptions.dart';
 import '../../../../core/network/mock/mock_assets.dart';
 import '../../../../core/network/mock/mock_route.dart';
 import '../../../invoices/data/datasources/invoices_mock_store.dart';
 import '../../../pipeline/data/datasources/pipeline_mock_store.dart';
 import 'customer_endpoints.dart';
+import 'customer_mock_store.dart';
 
 /// Fake customers endpoints served by the mock backend. Activity times in the
 /// fixture are "hours/days ago", resolved against the current time so the
@@ -14,9 +14,9 @@ import 'customer_endpoints.dart';
 /// customer name), so deals and invoices created elsewhere show up here.
 class CustomerMockApi implements MockApiModule {
   CustomerMockApi(this._assets, {DateTime Function()? clock})
-    : _clock = clock ?? DateTime.now;
+    : _clock = clock ?? DateTime.now,
+      _store = CustomerMockStore.of(_assets, clock: clock);
 
-  static const _customersAsset = 'assets/mock/customer/customers.json';
   static const _noonHour = 12;
   static const _summaryFields = [
     'id',
@@ -24,15 +24,22 @@ class CustomerMockApi implements MockApiModule {
     'location',
     'openDeals',
     'amountDue',
+    'vatNumber',
   ];
   static const _dealFields = ['id', 'title', 'stage', 'value', 'probability'];
 
   final MockAssets _assets;
   final DateTime Function() _clock;
+  final CustomerMockStore _store;
 
   @override
   List<MockRoute> get routes => [
     MockRoute(HttpMethod.get, CustomerEndpoints.customers, _list),
+    MockRoute(
+      HttpMethod.post,
+      CustomerEndpoints.customers,
+      (request) => _create(request.body),
+    ),
     MockRoute(
       HttpMethod.get,
       CustomerEndpoints.customerPattern,
@@ -50,15 +57,10 @@ class CustomerMockApi implements MockApiModule {
     ),
   ];
 
-  Future<List<Map<String, dynamic>>> _all() async =>
-      ((await _assets.json(_customersAsset))! as List)
-          .cast<Map<String, dynamic>>();
+  Future<Map<String, dynamic>> _find(String? id) => _store.require(id);
 
-  Future<Map<String, dynamic>> _find(String? id) async {
-    final matches = (await _all()).where((customer) => customer['id'] == id);
-    if (matches.isEmpty) throw NotFoundException('customer $id');
-    return matches.first;
-  }
+  Future<Object?> _create(Map<String, dynamic> body) async =>
+      _profile(await _store.create(body), _clock());
 
   Future<Object?> _list(MockRequest request) async {
     final query = (request.query[CustomerEndpoints.queryParam] ?? '')
@@ -69,7 +71,7 @@ class CustomerMockApi implements MockApiModule {
         (customer['name'] as String).toLowerCase().contains(query) ||
         (customer['location'] as String).toLowerCase().contains(query);
     return [
-      for (final customer in await _all())
+      for (final customer in await _store.customers)
         if (matches(customer))
           {for (final key in _summaryFields) key: customer[key]},
     ];
@@ -101,17 +103,19 @@ class CustomerMockApi implements MockApiModule {
     ];
   }
 
-  Future<Object?> _customer(String? id) async {
-    final customer = await _find(id);
-    final now = _clock();
-    return {
-      ...customer,
-      'activity': [
-        for (final item in customer['activity'] as List)
-          _resolveActivity(item as Map<String, dynamic>, now),
-      ],
-    };
-  }
+  Future<Object?> _customer(String? id) async =>
+      _profile(await _find(id), _clock());
+
+  static Map<String, dynamic> _profile(
+    Map<String, dynamic> customer,
+    DateTime now,
+  ) => {
+    ...customer,
+    'activity': [
+      for (final item in customer['activity'] as List)
+        _resolveActivity(item as Map<String, dynamic>, now),
+    ],
+  };
 
   static Map<String, dynamic> _resolveActivity(
     Map<String, dynamic> raw,

@@ -20,7 +20,7 @@ import '../extensions/invoice_l10n.dart';
 import 'payment_amount_field.dart';
 import 'payment_date_field.dart';
 import 'payment_method_tile.dart';
-import 'sheet_handle.dart';
+import '../../../../shared/widgets/sheet_handle.dart';
 
 /// Scrollable form of the payment sheet: amount, method, date, reference.
 class PaymentSheetContent extends StatefulWidget {

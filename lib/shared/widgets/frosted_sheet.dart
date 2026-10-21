@@ -2,14 +2,14 @@ import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/app_durations.dart';
-import '../../../../core/constants/app_sizes.dart';
-import '../../../../core/l10n/l10n.dart';
-import '../../../../core/theme/app_colors.dart';
-import 'payment_sheet_frame.dart';
+import '../../core/constants/app_durations.dart';
+import '../../core/constants/app_sizes.dart';
+import '../../core/l10n/l10n.dart';
+import '../../core/theme/app_colors.dart';
+import 'sheet_frame.dart';
 
 /// Opens [builder]'s content in the frosted bottom sheet shared by the
-/// invoice flows, resolving with whatever the content pops.
+/// app's flows, resolving with whatever the content pops.
 ///
 /// Built on a general dialog (not `showModalBottomSheet`) so the backdrop can
 /// be blurred and dimmed like the design.
@@ -39,7 +39,7 @@ Future<T?> showFrostedSheet<T>(
         ),
         Align(
           alignment: Alignment.bottomCenter,
-          child: PaymentSheetFrame(child: builder(dialogContext)),
+          child: SheetFrame(child: builder(dialogContext)),
         ),
       ],
     ),

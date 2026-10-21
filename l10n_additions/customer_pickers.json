@@ -1,0 +1,24 @@
+{
+  "ar": {
+    "customerPickerTitle": "اختر العميل",
+    "newCustomerTitle": "عميل جديد",
+    "newCustomerNameLabel": "اسم العميل",
+    "newCustomerNameHint": "اسم الشركة أو العميل",
+    "newCustomerSectorNone": "غير محدد",
+    "newCustomerSave": "حفظ العميل",
+    "dealPickerTitle": "اختر الفرصة",
+    "dealPickerEmpty": "لا توجد فرص مفتوحة لهذا العميل",
+    "dealPickerNew": "+ فرصة جديدة"
+  },
+  "en": {
+    "customerPickerTitle": "Choose a customer",
+    "newCustomerTitle": "New customer",
+    "newCustomerNameLabel": "Customer name",
+    "newCustomerNameHint": "Company or customer name",
+    "newCustomerSectorNone": "Not specified",
+    "newCustomerSave": "Save customer",
+    "dealPickerTitle": "Choose a deal",
+    "dealPickerEmpty": "No open deals for this customer",
+    "dealPickerNew": "+ New deal"
+  }
+}

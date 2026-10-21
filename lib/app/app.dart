@@ -3,11 +3,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../core/l10n/l10n.dart';
 import '../core/layout/responsive.dart';
+import '../core/network/session_events.dart';
 import '../core/routing/app_router.dart';
+import '../core/routing/app_routes.dart';
 import '../core/theme/app_theme.dart';
 import '../features/account/domain/entities/app_language.dart';
 import '../features/account/presentation/cubit/locale_cubit.dart';
 import 'di/injection.dart';
+import 'widgets/session_expiry_listener.dart';
 
 class SijilakApp extends StatelessWidget {
   const SijilakApp({super.key, this.locale});
@@ -27,7 +30,11 @@ class SijilakApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: AppTheme.light,
           routerConfig: appRouter,
-          builder: (context, child) => ResponsiveFrame(child: child!),
+          builder: (context, child) => SessionExpiryListener(
+            events: getIt<SessionEvents>(),
+            onExpired: () => appRouter.go(AppRoutes.welcome),
+            child: ResponsiveFrame(child: child!),
+          ),
           locale: locale ?? Locale(language.code),
           supportedLocales: AppLocalizations.supportedLocales,
           localizationsDelegates: AppLocalizations.localizationsDelegates,

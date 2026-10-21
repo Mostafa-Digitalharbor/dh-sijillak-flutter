@@ -1921,6 +1921,222 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'فاتورة رقم {number}'**
   String customerInvoiceTitle(String number);
+
+  /// No description provided for @notifMarkAllRead.
+  ///
+  /// In ar, this message translates to:
+  /// **'تحديد الكل كمقروء'**
+  String get notifMarkAllRead;
+
+  /// No description provided for @notifEmptyTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'لا توجد إشعارات'**
+  String get notifEmptyTitle;
+
+  /// No description provided for @notifEmptyHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'ستظهر هنا تنبيهات عروض الأسعار والفواتير والمهام.'**
+  String get notifEmptyHint;
+
+  /// No description provided for @notifGroupYesterday.
+  ///
+  /// In ar, this message translates to:
+  /// **'أمس'**
+  String get notifGroupYesterday;
+
+  /// No description provided for @notifGroupEarlier.
+  ///
+  /// In ar, this message translates to:
+  /// **'أقدم'**
+  String get notifGroupEarlier;
+
+  /// No description provided for @notifUnreadMark.
+  ///
+  /// In ar, this message translates to:
+  /// **'غير مقروء'**
+  String get notifUnreadMark;
+
+  /// No description provided for @notifBellUnread.
+  ///
+  /// In ar, this message translates to:
+  /// **'{count, plural, =1{الإشعارات، إشعار واحد غير مقروء} =2{الإشعارات، إشعاران غير مقروءين} few{الإشعارات، {formatted} إشعارات غير مقروءة} other{الإشعارات، {formatted} إشعاراً غير مقروء}}'**
+  String notifBellUnread(String formatted, int count);
+
+  /// No description provided for @notifQuoteViewedTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'{customer} اطّلع على عرض السعر'**
+  String notifQuoteViewedTitle(String customer);
+
+  /// No description provided for @notifQuoteApprovedTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'{customer} وافق على عرض السعر'**
+  String notifQuoteApprovedTitle(String customer);
+
+  /// No description provided for @notifQuoteBody.
+  ///
+  /// In ar, this message translates to:
+  /// **'عرض السعر رقم {number} · {amount}'**
+  String notifQuoteBody(String number, String amount);
+
+  /// No description provided for @notifInvoiceOverdueTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'الفاتورة رقم {number} متأخرة'**
+  String notifInvoiceOverdueTitle(String number);
+
+  /// No description provided for @notifPaymentReceivedTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم استلام دفعة من {customer}'**
+  String notifPaymentReceivedTitle(String customer);
+
+  /// No description provided for @notifPaymentReceivedBody.
+  ///
+  /// In ar, this message translates to:
+  /// **'{amount} للفاتورة رقم {number}'**
+  String notifPaymentReceivedBody(String amount, String number);
+
+  /// No description provided for @notifTaskReminderTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'تذكير بمهمة'**
+  String get notifTaskReminderTitle;
+
+  /// No description provided for @notifDealWonTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم إغلاق صفقة مع {customer}'**
+  String notifDealWonTitle(String customer);
+
+  /// No description provided for @notifJoinedBody.
+  ///
+  /// In ar, this message translates to:
+  /// **'{first} · {second}'**
+  String notifJoinedBody(String first, String second);
+
+  /// No description provided for @customerPickerTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر العميل'**
+  String get customerPickerTitle;
+
+  /// No description provided for @newCustomerTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'عميل جديد'**
+  String get newCustomerTitle;
+
+  /// No description provided for @newCustomerNameLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'اسم العميل'**
+  String get newCustomerNameLabel;
+
+  /// No description provided for @newCustomerNameHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'اسم الشركة أو العميل'**
+  String get newCustomerNameHint;
+
+  /// No description provided for @newCustomerSectorNone.
+  ///
+  /// In ar, this message translates to:
+  /// **'غير محدد'**
+  String get newCustomerSectorNone;
+
+  /// No description provided for @newCustomerSave.
+  ///
+  /// In ar, this message translates to:
+  /// **'حفظ العميل'**
+  String get newCustomerSave;
+
+  /// No description provided for @dealPickerTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر الفرصة'**
+  String get dealPickerTitle;
+
+  /// No description provided for @dealPickerEmpty.
+  ///
+  /// In ar, this message translates to:
+  /// **'لا توجد فرص مفتوحة لهذا العميل'**
+  String get dealPickerEmpty;
+
+  /// No description provided for @dealPickerNew.
+  ///
+  /// In ar, this message translates to:
+  /// **'+ فرصة جديدة'**
+  String get dealPickerNew;
+
+  /// No description provided for @searchRecentTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'البحث الأخير'**
+  String get searchRecentTitle;
+
+  /// No description provided for @searchClearRecent.
+  ///
+  /// In ar, this message translates to:
+  /// **'مسح'**
+  String get searchClearRecent;
+
+  /// No description provided for @searchIdleTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'ابحث في كل شيء'**
+  String get searchIdleTitle;
+
+  /// No description provided for @searchIdleHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'ابحث عن العملاء والفرص والفواتير وعروض الأسعار من مكان واحد.'**
+  String get searchIdleHint;
+
+  /// No description provided for @searchGroupQuotes.
+  ///
+  /// In ar, this message translates to:
+  /// **'عروض الأسعار'**
+  String get searchGroupQuotes;
+
+  /// No description provided for @searchSectionHeading.
+  ///
+  /// In ar, this message translates to:
+  /// **'{title} ({count})'**
+  String searchSectionHeading(String title, String count);
+
+  /// No description provided for @searchNoResultsTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'لا توجد نتائج لـ «{query}»'**
+  String searchNoResultsTitle(String query);
+
+  /// No description provided for @searchNoResultsHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'جرّب اسم العميل أو رقم الفاتورة أو عنوان الفرصة.'**
+  String get searchNoResultsHint;
+
+  /// No description provided for @biometricReason.
+  ///
+  /// In ar, this message translates to:
+  /// **'أكّد هويتك لتسجيل الدخول إلى سجلّك'**
+  String get biometricReason;
+
+  /// No description provided for @loginBiometricUnavailable.
+  ///
+  /// In ar, this message translates to:
+  /// **'لا توجد بصمة أو وجه مسجّل على هذا الجهاز. فعّلها من إعدادات الجهاز أو سجّل الدخول بكلمة المرور'**
+  String get loginBiometricUnavailable;
+
+  /// No description provided for @loginBiometricLockedOut.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم قفل التحقق الحيوي مؤقتاً بعد محاولات كثيرة. حاول لاحقاً أو سجّل الدخول بكلمة المرور'**
+  String get loginBiometricLockedOut;
 }
 
 class _AppLocalizationsDelegate

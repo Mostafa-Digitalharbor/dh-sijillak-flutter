@@ -84,6 +84,15 @@ class NewInvoiceCubit extends Cubit<NewInvoiceState> {
   /// Loads the draft again after a failure, from the same source.
   Future<void> reload() => load(quoteNumber: _quoteNumber);
 
+  /// Bills the draft to another customer, identified by name and tax number.
+  void changeCustomer({required String name, required String vatNumber}) {
+    final draft = state.draft;
+    if (draft == null) return;
+    emit(
+      state.withDraft(draft.withCustomer(customer: name, vatNumber: vatNumber)),
+    );
+  }
+
   void changeQuantity(int index, int delta) {
     final draft = state.draft;
     if (draft == null) return;

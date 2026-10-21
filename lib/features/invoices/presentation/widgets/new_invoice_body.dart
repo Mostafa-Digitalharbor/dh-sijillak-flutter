@@ -21,12 +21,16 @@ class NewInvoiceBody extends StatelessWidget {
   const NewInvoiceBody({
     super.key,
     required this.draft,
+    required this.onChangeCustomer,
     required this.onQuantityChanged,
     required this.onAddProduct,
     required this.onRemoveLine,
   });
 
   final InvoiceDraft draft;
+
+  /// Called when the customer tile is tapped.
+  final VoidCallback onChangeCustomer;
 
   /// Called with the line index and the quantity change (+1 / -1).
   final void Function(int index, int delta) onQuantityChanged;
@@ -44,7 +48,10 @@ class NewInvoiceBody extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        NewInvoiceCustomerTile(customer: draft.customer),
+        NewInvoiceCustomerTile(
+          customer: draft.customer,
+          onChange: onChangeCustomer,
+        ),
         const SizedBox(height: AppSpacing.s14),
         Row(
           children: [

@@ -23,6 +23,18 @@ class InvoiceDraft extends Equatable {
 
   DocumentTotals get totals => DocumentTotals.of(lines);
 
+  /// The same draft billed to another customer.
+  InvoiceDraft withCustomer({
+    required String customer,
+    required String vatNumber,
+  }) => InvoiceDraft(
+    customer: customer,
+    vatNumber: vatNumber,
+    issueDate: issueDate,
+    paymentTermsDays: paymentTermsDays,
+    lines: lines,
+  );
+
   InvoiceDraft withLines(List<DocumentLine> lines) => InvoiceDraft(
     customer: customer,
     vatNumber: vatNumber,

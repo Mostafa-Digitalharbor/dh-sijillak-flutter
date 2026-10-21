@@ -4,12 +4,14 @@ import '../../../core/network/api_client.dart';
 import '../data/datasources/customer_remote_data_source.dart';
 import '../data/repositories/customer_repository_impl.dart';
 import '../domain/repositories/customer_repository.dart';
+import '../domain/usecases/create_customer_use_case.dart';
 import '../domain/usecases/get_customer_deals_use_case.dart';
 import '../domain/usecases/get_customer_invoices_use_case.dart';
 import '../domain/usecases/get_customer_use_case.dart';
 import '../domain/usecases/get_customers_use_case.dart';
 import '../presentation/cubit/customer_cubit.dart';
 import '../presentation/cubit/customers_cubit.dart';
+import '../presentation/cubit/new_customer_cubit.dart';
 
 export '../data/datasources/customer_mock_api.dart';
 
@@ -26,6 +28,8 @@ void registerCustomer(GetIt getIt) {
     ..registerLazySingleton(() => GetCustomerUseCase(getIt()))
     ..registerLazySingleton(() => GetCustomerDealsUseCase(getIt()))
     ..registerLazySingleton(() => GetCustomerInvoicesUseCase(getIt()))
+    ..registerLazySingleton(() => CreateCustomerUseCase(getIt()))
     ..registerFactory(() => CustomersCubit(getIt()))
+    ..registerFactory(() => NewCustomerCubit(getIt()))
     ..registerFactory(() => CustomerCubit(getIt(), getIt(), getIt()));
 }

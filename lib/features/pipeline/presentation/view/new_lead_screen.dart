@@ -21,14 +21,17 @@ import '../widgets/lead_stage_picker.dart';
 import '../widgets/lead_value_and_date.dart';
 import '../widgets/new_lead_bottom_bar.dart';
 
-/// Form for creating a deal.
+/// Form for creating a deal, for [customerId] when given (otherwise the
+/// customer can be chosen in the form).
 class NewLeadScreen extends StatelessWidget {
-  const NewLeadScreen({super.key});
+  const NewLeadScreen({super.key, this.customerId});
+
+  final String? customerId;
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => getIt<NewLeadCubit>()..load(),
+      create: (_) => getIt<NewLeadCubit>()..load(customerId),
       child: const _NewLeadView(),
     );
   }

@@ -28,6 +28,8 @@ const _protected = [
   AppRoutes.invoice,
   AppRoutes.paymentDone,
   AppRoutes.account,
+  AppRoutes.notifications,
+  AppRoutes.search,
 ];
 
 const _guest = [AppRoutes.welcome, AppRoutes.login];

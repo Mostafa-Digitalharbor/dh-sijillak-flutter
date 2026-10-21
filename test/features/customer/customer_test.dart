@@ -11,11 +11,13 @@ import 'package:sijilak/features/customer/data/models/customer_invoice_model.dar
 import 'package:sijilak/features/customer/data/models/customer_model.dart';
 import 'package:sijilak/features/customer/data/models/customer_summary_model.dart';
 import 'package:sijilak/features/customer/data/repositories/customer_repository_impl.dart';
+import 'package:sijilak/features/customer/data/models/new_customer_model.dart';
 import 'package:sijilak/features/customer/domain/entities/customer.dart';
 import 'package:sijilak/features/customer/domain/entities/customer_activity.dart';
 import 'package:sijilak/features/customer/domain/entities/customer_deal.dart';
 import 'package:sijilak/features/customer/domain/entities/customer_invoice.dart';
 import 'package:sijilak/features/customer/domain/entities/customer_summary.dart';
+import 'package:sijilak/features/customer/domain/entities/new_customer.dart';
 import 'package:sijilak/features/customer/domain/repositories/customer_repository.dart';
 import 'package:sijilak/features/customer/domain/usecases/get_customer_deals_use_case.dart';
 import 'package:sijilak/features/customer/domain/usecases/get_customer_invoices_use_case.dart';
@@ -33,6 +35,9 @@ class _FakeRepository implements CustomerRepository {
     requested.add(id);
     return result;
   }
+
+  @override
+  Future<Result<Customer>> createCustomer(NewCustomer customer) async => result;
 
   @override
   Future<Result<List<CustomerSummary>>> getCustomers(String query) async =>
@@ -183,6 +188,10 @@ CustomerCubit _cubit(CustomerRepository repository) => CustomerCubit(
 );
 
 class _ThrowingRemote implements CustomerRemoteDataSource {
+  @override
+  Future<CustomerModel> createCustomer(NewCustomerModel customer) async =>
+      throw StateError('boom');
+
   @override
   Future<CustomerModel> fetchCustomer(String id) async =>
       throw StateError('boom');

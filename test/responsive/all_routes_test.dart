@@ -25,6 +25,8 @@ const _routes = [
   AppRoutes.invoice,
   AppRoutes.paymentDone,
   AppRoutes.account,
+  AppRoutes.notifications,
+  AppRoutes.search,
 ];
 
 /// `ROUTE=/home flutter test test/responsive` limits the run to one route.

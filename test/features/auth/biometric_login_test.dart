@@ -1,10 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:sijilak/core/error/exceptions.dart';
 import 'package:sijilak/core/error/failure.dart';
 import 'package:sijilak/core/network/mock/mock_api_client.dart';
 import 'package:sijilak/core/network/mock/mock_assets.dart';
 import 'package:sijilak/core/usecase/usecase.dart';
 import 'package:sijilak/core/utils/view_status.dart';
-import 'package:sijilak/features/auth/data/datasources/auth_api_fields.dart';
 import 'package:sijilak/features/auth/data/datasources/auth_mock_api.dart';
 import 'package:sijilak/features/auth/data/datasources/auth_remote_data_source.dart';
 import 'package:sijilak/features/auth/data/repositories/auth_repository_impl.dart';
@@ -12,13 +12,26 @@ import 'package:sijilak/features/auth/data/repositories/noop_biometric_authentic
 import 'package:sijilak/features/auth/data/repositories/session_store_impl.dart';
 import 'package:sijilak/features/auth/domain/entities/login_credentials.dart';
 import 'package:sijilak/features/auth/domain/repositories/biometric_authenticator.dart';
+import 'package:sijilak/features/auth/domain/usecases/can_use_biometrics_use_case.dart';
 import 'package:sijilak/features/auth/domain/usecases/login_use_case.dart';
 import 'package:sijilak/features/auth/domain/usecases/login_with_biometrics_use_case.dart';
 import 'package:sijilak/features/auth/presentation/cubit/login_cubit.dart';
 
 class _Denying implements BiometricAuthenticator {
   @override
+  Future<bool> isAvailable() async => true;
+
+  @override
   Future<bool> authenticate() async => false;
+}
+
+class _Unavailable implements BiometricAuthenticator {
+  @override
+  Future<bool> isAvailable() async => false;
+
+  @override
+  Future<bool> authenticate() async =>
+      throw const UnauthorizedException(BiometricErrors.unavailable);
 }
 
 void main() {
@@ -52,17 +65,36 @@ void main() {
       final failure = (await biometric()(const NoParams())).failureOrNull;
       expect(failure, isA<ValidationFailure>());
       expect(
-        (failure! as ValidationFailure).fields[AuthApiFields.biometric],
-        AuthApiFields.noCredentialCode,
+        (failure! as ValidationFailure).fields[LoginWithBiometricsUseCase
+            .noCredentialField],
+        LoginWithBiometricsUseCase.noCredentialCode,
       );
       expect(session.current, isNull);
     });
 
-    test('signs in with the session of an earlier sign-in', () async {
+    test('resumes the remembered session with its refresh token', () async {
       await passwordSignIn();
+      final oldTokens = session.remembered!.tokens!;
       final result = await biometric()(const NoParams());
-      expect(result.dataOrNull?.user.email, 'a@b.sa');
-      expect(session.current, result.dataOrNull);
+      final signedIn = result.dataOrNull!;
+      expect(signedIn.user.email, 'a@b.sa');
+      expect(signedIn.tokens, isNotNull);
+      expect(signedIn.tokens!.refreshToken, isNot(oldTokens.refreshToken));
+      expect(session.current, signedIn);
+      expect(session.remembered, signedIn);
+    });
+
+    test('a refresh token can be used only once', () async {
+      await passwordSignIn();
+      final stale = session.remembered!;
+      await biometric()(const NoParams());
+      session
+        ..clear()
+        ..save(stale)
+        ..clear();
+      final result = await biometric()(const NoParams());
+      expect(result.failureOrNull, isA<UnauthorizedFailure>());
+      expect(session.remembered, isNull);
     });
 
     test('a denied device check leaves no session', () async {
@@ -71,11 +103,51 @@ void main() {
       expect(result.failureOrNull, isA<UnauthorizedFailure>());
       expect(session.current, isNull);
     });
+
+    test('a check that cannot run reports why', () async {
+      await passwordSignIn();
+      final result = await biometric(_Unavailable())(const NoParams());
+      expect(
+        result.failureOrNull,
+        const UnauthorizedFailure(BiometricErrors.unavailable),
+      );
+    });
+  });
+
+  group('CanUseBiometricsUseCase', () {
+    test('mirrors the device', () async {
+      expect(
+        (await const CanUseBiometricsUseCase(NoopBiometricAuthenticator())(
+          const NoParams(),
+        )).dataOrNull,
+        isTrue,
+      );
+      expect(
+        (await CanUseBiometricsUseCase(_Unavailable())(const NoParams()))
+            .dataOrNull,
+        isFalse,
+      );
+    });
   });
 
   group('LoginCubit biometrics', () {
-    LoginCubit build() =>
-        LoginCubit(LoginUseCase(repository, session), biometric());
+    LoginCubit build([BiometricAuthenticator? auth]) => LoginCubit(
+      LoginUseCase(repository, session),
+      biometric(auth),
+      CanUseBiometricsUseCase(auth ?? const NoopBiometricAuthenticator()),
+    );
+
+    test('availability is loaded from the device', () async {
+      final yes = build();
+      final no = build(_Unavailable());
+      addTearDown(yes.close);
+      addTearDown(no.close);
+      expect(yes.state.biometricsAvailable, isFalse);
+      await yes.loadBiometricAvailability();
+      await no.loadBiometricAvailability();
+      expect(yes.state.biometricsAvailable, isTrue);
+      expect(no.state.biometricsAvailable, isFalse);
+    });
 
     test('failure is exposed after loading', () async {
       final cubit = build();

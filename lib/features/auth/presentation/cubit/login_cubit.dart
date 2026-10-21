@@ -7,6 +7,7 @@ import '../../../../core/usecase/usecase.dart';
 import '../../../../core/utils/result.dart';
 import '../../domain/entities/auth_session.dart';
 import '../../domain/entities/login_credentials.dart';
+import '../../domain/usecases/can_use_biometrics_use_case.dart';
 import '../../domain/usecases/login_use_case.dart';
 import '../../domain/usecases/login_with_biometrics_use_case.dart';
 
@@ -17,6 +18,7 @@ class LoginState extends Equatable {
     this.password = '',
     this.status = ViewStatus.initial,
     this.failure,
+    this.biometricsAvailable = false,
   });
 
   final String email;
@@ -24,23 +26,59 @@ class LoginState extends Equatable {
   final ViewStatus status;
   final Failure? failure;
 
+  /// Whether the device can offer biometric sign-in.
+  final bool biometricsAvailable;
+
   @override
-  List<Object?> get props => [email, password, status, failure];
+  List<Object?> get props => [
+    email,
+    password,
+    status,
+    failure,
+    biometricsAvailable,
+  ];
 }
 
 /// Drives the sign-in screen.
 class LoginCubit extends Cubit<LoginState> {
-  LoginCubit(this._login, this._loginWithBiometrics)
+  LoginCubit(this._login, this._loginWithBiometrics, this._canUseBiometrics)
     : super(const LoginState());
 
   final LoginUseCase _login;
   final LoginWithBiometricsUseCase _loginWithBiometrics;
+  final CanUseBiometricsUseCase _canUseBiometrics;
 
-  void emailChanged(String value) =>
-      emit(LoginState(email: value, password: state.password));
+  /// Checks whether the device offers biometrics, to show or hide the button.
+  Future<void> loadBiometricAvailability() async {
+    final available =
+        (await _canUseBiometrics(const NoParams())).dataOrNull ?? false;
+    if (isClosed) return;
+    emit(
+      LoginState(
+        email: state.email,
+        password: state.password,
+        status: state.status,
+        failure: state.failure,
+        biometricsAvailable: available,
+      ),
+    );
+  }
 
-  void passwordChanged(String value) =>
-      emit(LoginState(email: state.email, password: value));
+  void emailChanged(String value) => emit(
+    LoginState(
+      email: value,
+      password: state.password,
+      biometricsAvailable: state.biometricsAvailable,
+    ),
+  );
+
+  void passwordChanged(String value) => emit(
+    LoginState(
+      email: state.email,
+      password: value,
+      biometricsAvailable: state.biometricsAvailable,
+    ),
+  );
 
   /// Signs in with the typed email and password.
   Future<void> signIn() => _submit(
@@ -59,6 +97,7 @@ class LoginCubit extends Cubit<LoginState> {
         email: state.email,
         password: state.password,
         status: ViewStatus.loading,
+        biometricsAvailable: state.biometricsAvailable,
       ),
     );
     final result = await request();
@@ -69,6 +108,7 @@ class LoginCubit extends Cubit<LoginState> {
         password: state.password,
         status: result.isSuccess ? ViewStatus.success : ViewStatus.failure,
         failure: result.failureOrNull,
+        biometricsAvailable: state.biometricsAvailable,
       ),
     );
   }

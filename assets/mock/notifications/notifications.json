@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": "n-1", "kind": "quoteViewed", "isRead": false,
+      "minutesAgo": 25,
+      "customerName": "مصنع الأغذية الحديثة", "customerId": "c-modern-foods",
+      "quoteNumber": 142, "amount": 65000
+    },
+    {
+      "id": "n-2", "kind": "paymentReceived", "isRead": false,
+      "minutesAgo": 95,
+      "customerName": "مصنع الأغذية الحديثة", "customerId": "c-modern-foods",
+      "invoiceNumber": 392, "amount": 38000
+    },
+    {
+      "id": "n-3", "kind": "taskReminder", "isRead": true,
+      "minutesAgo": 150,
+      "customerName": "مصنع الأغذية الحديثة", "customerId": "c-modern-foods",
+      "subject": "مكالمة متابعة عرض السعر"
+    },
+    {
+      "id": "n-4", "kind": "invoiceOverdue", "isRead": false,
+      "daysAgo": 1, "time": "09:00",
+      "customerName": "مصنع الأغذية الحديثة", "customerId": "c-modern-foods",
+      "invoiceNumber": 388, "amount": 12650
+    },
+    {
+      "id": "n-5", "kind": "quoteApproved", "isRead": true,
+      "daysAgo": 1, "time": "16:20",
+      "customerName": "مجموعة العقارات الذهبية", "customerId": "c-golden-realty",
+      "quoteNumber": 141, "amount": 24000
+    },
+    {
+      "id": "n-6", "kind": "dealWon", "isRead": false,
+      "daysAgo": 3, "time": "11:40",
+      "customerName": "مصنع الأغذية الحديثة", "customerId": "c-modern-foods",
+      "dealId": "d-8", "subject": "توريد معدات", "amount": 38000
+    },
+    {
+      "id": "n-7", "kind": "taskReminder", "isRead": true,
+      "daysAgo": 4, "time": "08:30",
+      "customerName": "مؤسسة التوريدات المتحدة", "customerId": "c-united-supplies",
+      "subject": "اجتماع عرض المنتج"
+    },
+    {
+      "id": "n-8", "kind": "paymentReceived", "isRead": true,
+      "daysAgo": 6, "time": "14:05",
+      "customerName": "مؤسسة التوريدات المتحدة", "customerId": "c-united-supplies",
+      "invoiceNumber": 383, "amount": 38525
+    }
+  ]
+}

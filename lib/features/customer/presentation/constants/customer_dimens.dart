@@ -62,6 +62,12 @@ abstract final class CustomerDimens {
   static const double rowCurrencySize = 11;
   static const double emptyTopSpace = 40;
 
+  // Picker sheets
+  static const double pickBadgeSize = 38;
+  static const double pickBadgeFont = 14;
+  static const double pickValueFont = 13;
+  static const double formFieldHeight = 46;
+
   /// Relative widths of the text block and the trailing figure of a row.
   static const int rowTextFlex = 3;
   static const int rowTrailingFlex = 2;

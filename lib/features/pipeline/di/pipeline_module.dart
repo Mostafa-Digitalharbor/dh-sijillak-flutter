@@ -25,5 +25,5 @@ void registerPipeline(GetIt getIt) {
     ..registerLazySingleton(() => GetLeadDefaultsUseCase(getIt()))
     ..registerLazySingleton(() => CreateDealUseCase(getIt()))
     ..registerFactory(() => PipelineCubit(getIt()))
-    ..registerFactory(() => NewLeadCubit(getIt(), getIt(), getIt()));
+    ..registerFactory(() => NewLeadCubit(getIt(), getIt(), getIt(), getIt()));
 }

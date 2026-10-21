@@ -69,23 +69,18 @@ class PipelineMockStore {
       for (final raw in data['deals'] as List)
         _resolveDeal(raw as Map<String, dynamic>, now),
     ];
-    final customers = <Object?, Object?>{};
     final owners = <Object?, Object?>{};
     for (final deal in deals) {
-      customers[deal['customerId']] = deal['customerName'];
       owners[deal['ownerId']] = deal['ownerName'];
     }
-    for (final (key, party) in [('customer', customers), ('owner', owners)]) {
-      final ref = defaults[key] as Map<String, dynamic>;
-      party[ref['id']] = ref['name'];
-    }
+    final owner = defaults['owner'] as Map<String, dynamic>;
+    owners[owner['id']] = owner['name'];
     return PipelineMockData(
       stages: [
         for (final stage in data['stages'] as List)
           Map<String, dynamic>.of(stage as Map<String, dynamic>),
       ],
       deals: deals,
-      customers: customers,
       owners: owners,
     );
   }
@@ -149,15 +144,14 @@ class PipelineMockData {
   PipelineMockData({
     required this.stages,
     required this.deals,
-    required this.customers,
     required this.owners,
   });
 
   final List<Map<String, dynamic>> stages;
   final List<Map<String, dynamic>> deals;
 
-  /// Known customers and owners by id -> display name.
-  final Map<Object?, Object?> customers;
+  /// Known owners by id -> display name. Customers live in the shared
+  /// `CustomerMockStore`.
   final Map<Object?, Object?> owners;
   int nextId = 100;
 }

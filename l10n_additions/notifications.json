@@ -1,0 +1,188 @@
+{
+  "ar": {
+    "notifMarkAllRead": "تحديد الكل كمقروء",
+    "notifEmptyTitle": "لا توجد إشعارات",
+    "notifEmptyHint": "ستظهر هنا تنبيهات عروض الأسعار والفواتير والمهام.",
+    "notifGroupYesterday": "أمس",
+    "notifGroupEarlier": "أقدم",
+    "notifUnreadMark": "غير مقروء",
+    "notifBellUnread": "{count, plural, =1{الإشعارات، إشعار واحد غير مقروء} =2{الإشعارات، إشعاران غير مقروءين} few{الإشعارات، {formatted} إشعارات غير مقروءة} other{الإشعارات، {formatted} إشعاراً غير مقروء}}",
+    "@notifBellUnread": {
+      "placeholders": {
+        "formatted": {
+          "type": "String"
+        },
+        "count": {
+          "type": "int"
+        }
+      }
+    },
+    "notifQuoteViewedTitle": "{customer} اطّلع على عرض السعر",
+    "@notifQuoteViewedTitle": {
+      "placeholders": {
+        "customer": {
+          "type": "String"
+        }
+      }
+    },
+    "notifQuoteApprovedTitle": "{customer} وافق على عرض السعر",
+    "@notifQuoteApprovedTitle": {
+      "placeholders": {
+        "customer": {
+          "type": "String"
+        }
+      }
+    },
+    "notifQuoteBody": "عرض السعر رقم {number} · {amount}",
+    "@notifQuoteBody": {
+      "placeholders": {
+        "number": {
+          "type": "String"
+        },
+        "amount": {
+          "type": "String"
+        }
+      }
+    },
+    "notifInvoiceOverdueTitle": "الفاتورة رقم {number} متأخرة",
+    "@notifInvoiceOverdueTitle": {
+      "placeholders": {
+        "number": {
+          "type": "String"
+        }
+      }
+    },
+    "notifPaymentReceivedTitle": "تم استلام دفعة من {customer}",
+    "@notifPaymentReceivedTitle": {
+      "placeholders": {
+        "customer": {
+          "type": "String"
+        }
+      }
+    },
+    "notifPaymentReceivedBody": "{amount} للفاتورة رقم {number}",
+    "@notifPaymentReceivedBody": {
+      "placeholders": {
+        "amount": {
+          "type": "String"
+        },
+        "number": {
+          "type": "String"
+        }
+      }
+    },
+    "notifTaskReminderTitle": "تذكير بمهمة",
+    "notifDealWonTitle": "تم إغلاق صفقة مع {customer}",
+    "@notifDealWonTitle": {
+      "placeholders": {
+        "customer": {
+          "type": "String"
+        }
+      }
+    },
+    "notifJoinedBody": "{first} · {second}",
+    "@notifJoinedBody": {
+      "placeholders": {
+        "first": {
+          "type": "String"
+        },
+        "second": {
+          "type": "String"
+        }
+      }
+    }
+  },
+  "en": {
+    "notifMarkAllRead": "Mark all as read",
+    "notifEmptyTitle": "No notifications",
+    "notifEmptyHint": "Alerts about quotes, invoices and tasks will show up here.",
+    "notifGroupYesterday": "Yesterday",
+    "notifGroupEarlier": "Earlier",
+    "notifUnreadMark": "Unread",
+    "notifBellUnread": "{count, plural, =1{Notifications, 1 unread} other{Notifications, {formatted} unread}}",
+    "@notifBellUnread": {
+      "placeholders": {
+        "formatted": {
+          "type": "String"
+        },
+        "count": {
+          "type": "int"
+        }
+      }
+    },
+    "notifQuoteViewedTitle": "{customer} viewed your quote",
+    "@notifQuoteViewedTitle": {
+      "placeholders": {
+        "customer": {
+          "type": "String"
+        }
+      }
+    },
+    "notifQuoteApprovedTitle": "{customer} approved your quote",
+    "@notifQuoteApprovedTitle": {
+      "placeholders": {
+        "customer": {
+          "type": "String"
+        }
+      }
+    },
+    "notifQuoteBody": "Quote no. {number} · {amount}",
+    "@notifQuoteBody": {
+      "placeholders": {
+        "number": {
+          "type": "String"
+        },
+        "amount": {
+          "type": "String"
+        }
+      }
+    },
+    "notifInvoiceOverdueTitle": "Invoice no. {number} is overdue",
+    "@notifInvoiceOverdueTitle": {
+      "placeholders": {
+        "number": {
+          "type": "String"
+        }
+      }
+    },
+    "notifPaymentReceivedTitle": "Payment received from {customer}",
+    "@notifPaymentReceivedTitle": {
+      "placeholders": {
+        "customer": {
+          "type": "String"
+        }
+      }
+    },
+    "notifPaymentReceivedBody": "{amount} for invoice no. {number}",
+    "@notifPaymentReceivedBody": {
+      "placeholders": {
+        "amount": {
+          "type": "String"
+        },
+        "number": {
+          "type": "String"
+        }
+      }
+    },
+    "notifTaskReminderTitle": "Task reminder",
+    "notifDealWonTitle": "Deal won with {customer}",
+    "@notifDealWonTitle": {
+      "placeholders": {
+        "customer": {
+          "type": "String"
+        }
+      }
+    },
+    "notifJoinedBody": "{first} · {second}",
+    "@notifJoinedBody": {
+      "placeholders": {
+        "first": {
+          "type": "String"
+        },
+        "second": {
+          "type": "String"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "API_BASE_URL": "https://api.staging.sijilak.example",
+  "USE_MOCK_BACKEND": false,
+  "APP_LOCALE": "ar"
+}

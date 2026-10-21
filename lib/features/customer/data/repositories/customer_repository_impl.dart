@@ -3,8 +3,10 @@ import '../../domain/entities/customer.dart';
 import '../../domain/entities/customer_deal.dart';
 import '../../domain/entities/customer_invoice.dart';
 import '../../domain/entities/customer_summary.dart';
+import '../../domain/entities/new_customer.dart';
 import '../../domain/repositories/customer_repository.dart';
 import '../datasources/customer_remote_data_source.dart';
+import '../models/new_customer_model.dart';
 
 class CustomerRepositoryImpl implements CustomerRepository {
   const CustomerRepositoryImpl(this._dataSource);
@@ -23,6 +25,13 @@ class CustomerRepositoryImpl implements CustomerRepository {
   @override
   Future<Result<Customer>> getCustomer(String id) => Result.guard(
     () async => (await _dataSource.fetchCustomer(id)).toEntity(),
+  );
+
+  @override
+  Future<Result<Customer>> createCustomer(NewCustomer customer) => Result.guard(
+    () async => (await _dataSource.createCustomer(
+      NewCustomerModel.fromEntity(customer),
+    )).toEntity(),
   );
 
   @override

@@ -23,6 +23,12 @@ abstract final class AppRoutes {
   static const invoice = '/invoice';
   static const paymentDone = '/payment/done';
 
+  // Notifications (full screen)
+  static const notifications = '/notifications';
+
+  // Global search (full screen)
+  static const search = '/search';
+
   // Account / settings (full screen)
   static const account = '/account';
 }

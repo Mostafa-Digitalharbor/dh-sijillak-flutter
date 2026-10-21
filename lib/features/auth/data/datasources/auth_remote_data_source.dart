@@ -1,4 +1,5 @@
 import '../../../../core/network/api_client.dart';
+import '../../../../core/network/auth_tokens.dart';
 import '../../domain/entities/login_credentials.dart';
 import '../../domain/entities/otp_verification.dart';
 import '../../domain/entities/registration_draft.dart';
@@ -20,7 +21,7 @@ abstract interface class AuthRemoteDataSource {
 
   Future<AuthSessionModel> login(LoginCredentials credentials);
 
-  Future<AuthSessionModel> loginWithBiometrics();
+  Future<AuthTokens> refresh(String refreshToken);
 }
 
 /// [AuthRemoteDataSource] over an [ApiClient].
@@ -79,8 +80,11 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   }
 
   @override
-  Future<AuthSessionModel> loginWithBiometrics() async {
-    final data = await _api.post(AuthEndpoints.loginBiometric);
-    return AuthSessionModel.fromJson(data.asJson);
+  Future<AuthTokens> refresh(String refreshToken) async {
+    final data = await _api.post(
+      AuthEndpoints.refresh,
+      body: {AuthApiFields.refreshToken: refreshToken},
+    );
+    return AuthTokens.fromJson(data.asJson);
   }
 }

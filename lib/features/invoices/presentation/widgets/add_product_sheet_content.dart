@@ -10,7 +10,7 @@ import '../constants/invoices_dimens.dart';
 import '../cubit/product_catalog_cubit.dart';
 import 'custom_item_form.dart';
 import 'product_tile.dart';
-import 'sheet_handle.dart';
+import '../../../../shared/widgets/sheet_handle.dart';
 
 /// Scrollable content of the add-product sheet: the catalog to pick from and
 /// a form for a custom line. Pops the chosen `DocumentLine`.

@@ -7,15 +7,12 @@ abstract final class AuthApiFields {
   static const code = 'code';
   static const email = 'email';
   static const password = 'password';
+  static const refreshToken = 'refreshToken';
 
   /// Error codes reported per field by validation errors.
   static const requiredCode = 'required';
   static const invalidCode = 'invalid';
   static const takenCode = 'taken';
-
-  /// Field and code of the error raised when no earlier sign-in exists.
-  static const biometric = 'biometric';
-  static const noCredentialCode = 'no_credential';
 
   /// Fixture holding the demo user and workspace.
   static const sessionFixture = 'assets/mock/auth/session.json';

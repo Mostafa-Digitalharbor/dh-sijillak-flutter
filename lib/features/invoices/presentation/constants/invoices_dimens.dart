@@ -73,10 +73,6 @@ abstract final class InvoicesDimens {
   static const double sectionGap = 18;
 
   // Payment sheet
-  static const double sheetRadius = 30;
-  static const double sheetBlur = 24;
-  static const double handleWidth = 44;
-  static const double handleHeight = 5;
   static const double sheetTitleSize = 22;
   static const double sheetSubtitleSize = 14;
   static const double fieldHeight = 48;
@@ -89,10 +85,6 @@ abstract final class InvoicesDimens {
   static const double attachRadius = 14;
   static const double attachIconSize = 18;
   static const double attachLabelSize = 14;
-
-  /// Gap kept between the top of the screen and a tall payment sheet.
-  static const double sheetTopMargin = 24;
-  static final sheetShadow = AppShadows.tinted(alpha: 0.18, blur: 40, dy: -12);
 
   // Payment confirmation
   static const double checkCircle = 96;

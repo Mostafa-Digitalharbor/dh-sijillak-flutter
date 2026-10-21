@@ -9,11 +9,18 @@ import '../constants/invoices_dimens.dart';
 
 /// Tappable customer selector at the top of a new invoice.
 class NewInvoiceCustomerTile extends StatelessWidget {
-  const NewInvoiceCustomerTile({super.key, required this.customer});
+  const NewInvoiceCustomerTile({
+    super.key,
+    required this.customer,
+    required this.onChange,
+  });
 
   static const double _badgeFontSize = 16;
 
   final String customer;
+
+  /// Called when the tile is tapped to pick another customer.
+  final VoidCallback onChange;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +33,7 @@ class NewInvoiceCustomerTile extends StatelessWidget {
       ),
       child: InkWell(
         borderRadius: shape,
-        onTap: () {},
+        onTap: onChange,
         child: Padding(
           padding: const EdgeInsets.all(AppSpacing.s14),
           child: PartyHeader(

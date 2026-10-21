@@ -1,8 +1,7 @@
-import 'dart:convert';
-
 import '../../../../core/constants/app_config.dart';
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/network/api_client.dart';
+import '../../../../core/network/auth_tokens.dart';
 import '../../../../core/network/mock/mock_assets.dart';
 import '../../../../core/network/mock/mock_route.dart';
 import '../models/registration_request_model.dart';
@@ -17,6 +16,9 @@ class AuthMockApi implements MockApiModule {
 
   /// The one code the mock backend rejects.
   static const _rejectedOtp = '000000';
+
+  /// Lifetime of the access tokens the mock backend issues.
+  static const _accessLifetime = Duration(minutes: 15);
 
   final MockAssets _assets;
 
@@ -41,7 +43,7 @@ class AuthMockApi implements MockApiModule {
     }),
     MockRoute(HttpMethod.post, AuthEndpoints.workspaces, _register),
     MockRoute(HttpMethod.post, AuthEndpoints.login, _login),
-    MockRoute(HttpMethod.post, AuthEndpoints.loginBiometric, _loginBiometric),
+    MockRoute(HttpMethod.post, AuthEndpoints.refresh, _refresh),
   ];
 
   bool _isFree(String handle) =>
@@ -49,18 +51,27 @@ class AuthMockApi implements MockApiModule {
       !AppConfig.reservedHandles.contains(handle) &&
       !_claimedHandles.contains(handle);
 
-  /// The session of the latest sign-in or registration: what the device
-  /// would have remembered for biometric sign-in.
-  Json? _remembered;
+  /// Refresh tokens the mock backend has issued and not yet rotated out.
+  final Set<String> _refreshTokens = {};
+  int _issued = 0;
 
   Future<Json> _session() async =>
       (await _assets.json(AuthApiFields.sessionFixture)).asJson;
 
-  /// Remembers [session] for biometric sign-in and hands it back.
-  Json _remember(Json session) {
-    _remembered = jsonDecode(jsonEncode(session)) as Json;
-    return session;
+  /// A fresh token pair; the previous refresh token stays valid until used.
+  Json _issueTokens() {
+    _issued++;
+    final refreshToken = 'mock-refresh-$_issued';
+    _refreshTokens.add(refreshToken);
+    return AuthTokens(
+      accessToken: 'mock-access-$_issued',
+      refreshToken: refreshToken,
+      expiresAt: DateTime.now().add(_accessLifetime),
+    ).toJson();
   }
+
+  /// [session] with freshly issued tokens attached.
+  Json _signedIn(Json session) => session..['tokens'] = _issueTokens();
 
   Future<Object?> _register(MockRequest request) async {
     final draft = RegistrationRequestModel.fromJson(request.body).toEntity();
@@ -79,7 +90,7 @@ class AuthMockApi implements MockApiModule {
       ..['name'] = draft.companyName
       ..['handle'] = handle
       ..['url'] = AppConfig.workspaceUrl(handle);
-    return _remember(session);
+    return _signedIn(session);
   }
 
   Future<Object?> _login(MockRequest request) async {
@@ -96,16 +107,14 @@ class AuthMockApi implements MockApiModule {
     }
     final session = await _session();
     (session['user'] as Json)['email'] = email;
-    return _remember(session);
+    return _signedIn(session);
   }
 
-  Future<Object?> _loginBiometric(MockRequest request) async {
-    final remembered = _remembered;
-    if (remembered == null) {
-      throw const ValidationException(
-        fields: {AuthApiFields.biometric: AuthApiFields.noCredentialCode},
-      );
+  Object? _refresh(MockRequest request) {
+    final token = request.body[AuthApiFields.refreshToken] as String?;
+    if (token == null || !_refreshTokens.remove(token)) {
+      throw const UnauthorizedException();
     }
-    return jsonDecode(jsonEncode(remembered));
+    return _issueTokens();
   }
 }

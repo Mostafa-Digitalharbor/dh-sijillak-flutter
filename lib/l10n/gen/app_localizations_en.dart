@@ -1075,4 +1075,145 @@ class AppLocalizationsEn extends AppLocalizations {
   String customerInvoiceTitle(String number) {
     return 'Invoice #$number';
   }
+
+  @override
+  String get notifMarkAllRead => 'Mark all as read';
+
+  @override
+  String get notifEmptyTitle => 'No notifications';
+
+  @override
+  String get notifEmptyHint =>
+      'Alerts about quotes, invoices and tasks will show up here.';
+
+  @override
+  String get notifGroupYesterday => 'Yesterday';
+
+  @override
+  String get notifGroupEarlier => 'Earlier';
+
+  @override
+  String get notifUnreadMark => 'Unread';
+
+  @override
+  String notifBellUnread(String formatted, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Notifications, $formatted unread',
+      one: 'Notifications, 1 unread',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String notifQuoteViewedTitle(String customer) {
+    return '$customer viewed your quote';
+  }
+
+  @override
+  String notifQuoteApprovedTitle(String customer) {
+    return '$customer approved your quote';
+  }
+
+  @override
+  String notifQuoteBody(String number, String amount) {
+    return 'Quote no. $number · $amount';
+  }
+
+  @override
+  String notifInvoiceOverdueTitle(String number) {
+    return 'Invoice no. $number is overdue';
+  }
+
+  @override
+  String notifPaymentReceivedTitle(String customer) {
+    return 'Payment received from $customer';
+  }
+
+  @override
+  String notifPaymentReceivedBody(String amount, String number) {
+    return '$amount for invoice no. $number';
+  }
+
+  @override
+  String get notifTaskReminderTitle => 'Task reminder';
+
+  @override
+  String notifDealWonTitle(String customer) {
+    return 'Deal won with $customer';
+  }
+
+  @override
+  String notifJoinedBody(String first, String second) {
+    return '$first · $second';
+  }
+
+  @override
+  String get customerPickerTitle => 'Choose a customer';
+
+  @override
+  String get newCustomerTitle => 'New customer';
+
+  @override
+  String get newCustomerNameLabel => 'Customer name';
+
+  @override
+  String get newCustomerNameHint => 'Company or customer name';
+
+  @override
+  String get newCustomerSectorNone => 'Not specified';
+
+  @override
+  String get newCustomerSave => 'Save customer';
+
+  @override
+  String get dealPickerTitle => 'Choose a deal';
+
+  @override
+  String get dealPickerEmpty => 'No open deals for this customer';
+
+  @override
+  String get dealPickerNew => '+ New deal';
+
+  @override
+  String get searchRecentTitle => 'Recent searches';
+
+  @override
+  String get searchClearRecent => 'Clear';
+
+  @override
+  String get searchIdleTitle => 'Search everything';
+
+  @override
+  String get searchIdleHint =>
+      'Find customers, deals, invoices and quotes from one place.';
+
+  @override
+  String get searchGroupQuotes => 'Quotes';
+
+  @override
+  String searchSectionHeading(String title, String count) {
+    return '$title ($count)';
+  }
+
+  @override
+  String searchNoResultsTitle(String query) {
+    return 'No results for \"$query\"';
+  }
+
+  @override
+  String get searchNoResultsHint =>
+      'Try a customer name, an invoice number or a deal title.';
+
+  @override
+  String get biometricReason => 'Confirm your identity to sign in to Sijilak';
+
+  @override
+  String get loginBiometricUnavailable =>
+      'No fingerprint or face is set up on this device. Enable it in device settings or sign in with your password';
+
+  @override
+  String get loginBiometricLockedOut =>
+      'Biometric sign-in is temporarily locked after too many attempts. Try again later or use your password';
 }

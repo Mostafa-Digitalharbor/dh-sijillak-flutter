@@ -1,3 +1,4 @@
+import '../../../../core/network/auth_tokens.dart';
 import '../../../../core/utils/result.dart';
 import '../../domain/entities/auth_session.dart';
 import '../../domain/entities/login_credentials.dart';
@@ -34,7 +35,6 @@ class AuthRepositoryImpl implements AuthRepository {
       Result.guard(() async => (await _remote.login(credentials)).toEntity());
 
   @override
-  Future<Result<AuthSession>> loginWithBiometrics() => Result.guard(
-    () async => (await _remote.loginWithBiometrics()).toEntity(),
-  );
+  Future<Result<AuthTokens>> refreshTokens(String refreshToken) =>
+      Result.guard(() => _remote.refresh(refreshToken));
 }

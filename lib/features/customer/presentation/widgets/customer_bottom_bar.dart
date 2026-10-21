@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../core/constants/app_sizes.dart';
@@ -9,6 +10,8 @@ import '../../../../shared/widgets/glass_bottom_bar.dart';
 import '../../../../shared/widgets/grow_row.dart';
 import '../../../../shared/widgets/outline_action_button.dart';
 import '../../../../shared/widgets/primary_button.dart';
+import '../cubit/customer_cubit.dart';
+import '../flows/start_quote_flow.dart';
 
 /// Pinned "create invoice" and "quote" actions of the customer profile.
 class CustomerBottomBar extends StatelessWidget {
@@ -20,6 +23,9 @@ class CustomerBottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
+    final customerId = context.select(
+      (CustomerCubit c) => c.state.customer?.id,
+    );
     return GlassBottomBar(
       child: GrowRow(
         items: [
@@ -40,7 +46,13 @@ class CustomerBottomBar extends StatelessWidget {
             extraWidth: _outlineExtraWidth,
             child: OutlineActionButton(
               label: l10n.quote,
-              onPressed: () => context.push(AppRoutes.quote),
+              onPressed: customerId == null
+                  ? null
+                  : () => startQuoteForCustomer(
+                      context,
+                      customerId: customerId,
+                      skipPickerWhenNoOpenDeals: true,
+                    ),
             ),
           ),
         ],

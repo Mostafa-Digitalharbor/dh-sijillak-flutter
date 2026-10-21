@@ -1078,4 +1078,147 @@ class AppLocalizationsAr extends AppLocalizations {
   String customerInvoiceTitle(String number) {
     return 'فاتورة رقم $number';
   }
+
+  @override
+  String get notifMarkAllRead => 'تحديد الكل كمقروء';
+
+  @override
+  String get notifEmptyTitle => 'لا توجد إشعارات';
+
+  @override
+  String get notifEmptyHint =>
+      'ستظهر هنا تنبيهات عروض الأسعار والفواتير والمهام.';
+
+  @override
+  String get notifGroupYesterday => 'أمس';
+
+  @override
+  String get notifGroupEarlier => 'أقدم';
+
+  @override
+  String get notifUnreadMark => 'غير مقروء';
+
+  @override
+  String notifBellUnread(String formatted, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'الإشعارات، $formatted إشعاراً غير مقروء',
+      few: 'الإشعارات، $formatted إشعارات غير مقروءة',
+      two: 'الإشعارات، إشعاران غير مقروءين',
+      one: 'الإشعارات، إشعار واحد غير مقروء',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String notifQuoteViewedTitle(String customer) {
+    return '$customer اطّلع على عرض السعر';
+  }
+
+  @override
+  String notifQuoteApprovedTitle(String customer) {
+    return '$customer وافق على عرض السعر';
+  }
+
+  @override
+  String notifQuoteBody(String number, String amount) {
+    return 'عرض السعر رقم $number · $amount';
+  }
+
+  @override
+  String notifInvoiceOverdueTitle(String number) {
+    return 'الفاتورة رقم $number متأخرة';
+  }
+
+  @override
+  String notifPaymentReceivedTitle(String customer) {
+    return 'تم استلام دفعة من $customer';
+  }
+
+  @override
+  String notifPaymentReceivedBody(String amount, String number) {
+    return '$amount للفاتورة رقم $number';
+  }
+
+  @override
+  String get notifTaskReminderTitle => 'تذكير بمهمة';
+
+  @override
+  String notifDealWonTitle(String customer) {
+    return 'تم إغلاق صفقة مع $customer';
+  }
+
+  @override
+  String notifJoinedBody(String first, String second) {
+    return '$first · $second';
+  }
+
+  @override
+  String get customerPickerTitle => 'اختر العميل';
+
+  @override
+  String get newCustomerTitle => 'عميل جديد';
+
+  @override
+  String get newCustomerNameLabel => 'اسم العميل';
+
+  @override
+  String get newCustomerNameHint => 'اسم الشركة أو العميل';
+
+  @override
+  String get newCustomerSectorNone => 'غير محدد';
+
+  @override
+  String get newCustomerSave => 'حفظ العميل';
+
+  @override
+  String get dealPickerTitle => 'اختر الفرصة';
+
+  @override
+  String get dealPickerEmpty => 'لا توجد فرص مفتوحة لهذا العميل';
+
+  @override
+  String get dealPickerNew => '+ فرصة جديدة';
+
+  @override
+  String get searchRecentTitle => 'البحث الأخير';
+
+  @override
+  String get searchClearRecent => 'مسح';
+
+  @override
+  String get searchIdleTitle => 'ابحث في كل شيء';
+
+  @override
+  String get searchIdleHint =>
+      'ابحث عن العملاء والفرص والفواتير وعروض الأسعار من مكان واحد.';
+
+  @override
+  String get searchGroupQuotes => 'عروض الأسعار';
+
+  @override
+  String searchSectionHeading(String title, String count) {
+    return '$title ($count)';
+  }
+
+  @override
+  String searchNoResultsTitle(String query) {
+    return 'لا توجد نتائج لـ «$query»';
+  }
+
+  @override
+  String get searchNoResultsHint =>
+      'جرّب اسم العميل أو رقم الفاتورة أو عنوان الفرصة.';
+
+  @override
+  String get biometricReason => 'أكّد هويتك لتسجيل الدخول إلى سجلّك';
+
+  @override
+  String get loginBiometricUnavailable =>
+      'لا توجد بصمة أو وجه مسجّل على هذا الجهاز. فعّلها من إعدادات الجهاز أو سجّل الدخول بكلمة المرور';
+
+  @override
+  String get loginBiometricLockedOut =>
+      'تم قفل التحقق الحيوي مؤقتاً بعد محاولات كثيرة. حاول لاحقاً أو سجّل الدخول بكلمة المرور';
 }

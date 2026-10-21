@@ -5,5 +5,5 @@ abstract final class AuthEndpoints {
   static const verifyOtp = '/auth/otp/verify';
   static const workspaces = '/auth/workspaces';
   static const login = '/auth/login';
-  static const loginBiometric = '/auth/login/biometric';
+  static const refresh = '/auth/refresh';
 }

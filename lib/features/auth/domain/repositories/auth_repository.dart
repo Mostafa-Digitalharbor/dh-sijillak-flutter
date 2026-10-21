@@ -1,3 +1,4 @@
+import '../../../../core/network/auth_tokens.dart';
 import '../../../../core/utils/result.dart';
 import '../entities/auth_session.dart';
 import '../entities/login_credentials.dart';
@@ -18,6 +19,7 @@ abstract interface class AuthRepository {
 
   Future<Result<AuthSession>> login(LoginCredentials credentials);
 
-  /// Signs in with the credential remembered from an earlier sign-in.
-  Future<Result<AuthSession>> loginWithBiometrics();
+  /// Exchanges [refreshToken] for a new token pair (the old one is rotated
+  /// out). Fails with `UnauthorizedFailure` when it is no longer accepted.
+  Future<Result<AuthTokens>> refreshTokens(String refreshToken);
 }

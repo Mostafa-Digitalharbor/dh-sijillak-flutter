@@ -667,5 +667,133 @@
         "type": "String"
       }
     }
-  }
+  },
+  "notifMarkAllRead": "تحديد الكل كمقروء",
+  "notifEmptyTitle": "لا توجد إشعارات",
+  "notifEmptyHint": "ستظهر هنا تنبيهات عروض الأسعار والفواتير والمهام.",
+  "notifGroupYesterday": "أمس",
+  "notifGroupEarlier": "أقدم",
+  "notifUnreadMark": "غير مقروء",
+  "notifBellUnread": "{count, plural, =1{الإشعارات، إشعار واحد غير مقروء} =2{الإشعارات، إشعاران غير مقروءين} few{الإشعارات، {formatted} إشعارات غير مقروءة} other{الإشعارات، {formatted} إشعاراً غير مقروء}}",
+  "@notifBellUnread": {
+    "placeholders": {
+      "formatted": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifQuoteViewedTitle": "{customer} اطّلع على عرض السعر",
+  "@notifQuoteViewedTitle": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifQuoteApprovedTitle": "{customer} وافق على عرض السعر",
+  "@notifQuoteApprovedTitle": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifQuoteBody": "عرض السعر رقم {number} · {amount}",
+  "@notifQuoteBody": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "notifInvoiceOverdueTitle": "الفاتورة رقم {number} متأخرة",
+  "@notifInvoiceOverdueTitle": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPaymentReceivedTitle": "تم استلام دفعة من {customer}",
+  "@notifPaymentReceivedTitle": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPaymentReceivedBody": "{amount} للفاتورة رقم {number}",
+  "@notifPaymentReceivedBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "notifTaskReminderTitle": "تذكير بمهمة",
+  "notifDealWonTitle": "تم إغلاق صفقة مع {customer}",
+  "@notifDealWonTitle": {
+    "placeholders": {
+      "customer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifJoinedBody": "{first} · {second}",
+  "@notifJoinedBody": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "customerPickerTitle": "اختر العميل",
+  "newCustomerTitle": "عميل جديد",
+  "newCustomerNameLabel": "اسم العميل",
+  "newCustomerNameHint": "اسم الشركة أو العميل",
+  "newCustomerSectorNone": "غير محدد",
+  "newCustomerSave": "حفظ العميل",
+  "dealPickerTitle": "اختر الفرصة",
+  "dealPickerEmpty": "لا توجد فرص مفتوحة لهذا العميل",
+  "dealPickerNew": "+ فرصة جديدة",
+  "searchRecentTitle": "البحث الأخير",
+  "searchClearRecent": "مسح",
+  "searchIdleTitle": "ابحث في كل شيء",
+  "searchIdleHint": "ابحث عن العملاء والفرص والفواتير وعروض الأسعار من مكان واحد.",
+  "searchGroupQuotes": "عروض الأسعار",
+  "searchSectionHeading": "{title} ({count})",
+  "@searchSectionHeading": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultsTitle": "لا توجد نتائج لـ «{query}»",
+  "@searchNoResultsTitle": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultsHint": "جرّب اسم العميل أو رقم الفاتورة أو عنوان الفرصة.",
+  "biometricReason": "أكّد هويتك لتسجيل الدخول إلى سجلّك",
+  "loginBiometricUnavailable": "لا توجد بصمة أو وجه مسجّل على هذا الجهاز. فعّلها من إعدادات الجهاز أو سجّل الدخول بكلمة المرور",
+  "loginBiometricLockedOut": "تم قفل التحقق الحيوي مؤقتاً بعد محاولات كثيرة. حاول لاحقاً أو سجّل الدخول بكلمة المرور"
 }
