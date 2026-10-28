@@ -1,4 +1,4 @@
-package sa.com.digitalharbor.sijilak
+package net.digitalharbor.sijillak
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 

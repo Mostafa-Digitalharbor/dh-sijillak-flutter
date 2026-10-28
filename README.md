@@ -81,9 +81,9 @@ and `ios/Runner/{ar,en}.lproj/InfoPlist.strings`.
 
 ## App identity
 
-- Android `applicationId` / namespace: `sa.com.digitalharbor.sijilak` (a proposal, matching other Digital Harbor apps).
+- Android `applicationId` / namespace: `net.digitalharbor.sijillak` (Digital Harbor convention: net.digitalharbor.<app>).
   Change in `android/app/build.gradle.kts` (`namespace`, `applicationId`) and move
-  `android/app/src/main/kotlin/sa/com/digitalharbor/sijilak/MainActivity.kt` + its `package` line.
+  `android/app/src/main/kotlin/net/digitalharbor/sijillak/MainActivity.kt` + its `package` line.
 - iOS: `PRODUCT_BUNDLE_IDENTIFIER` in `ios/Runner.xcodeproj/project.pbxproj` (and `.RunnerTests`); also macOS `AppInfo.xcconfig`, `linux/CMakeLists.txt`.
 - The id cannot change after the first store upload, so confirm it before publishing.
 
@@ -140,3 +140,9 @@ iOS: open `ios/Runner.xcworkspace` on a Mac, set the signing team, then
 Tajawal (OFL 1.1). The font files in `assets/fonts/` are modified copies. The OFL requires that modified
 versions do not use the Reserved Font Name: rename the family/files before distributing and include
 the OFL licence text with the app.
+
+## Releasing to the stores
+
+Push a tag (`git tag v1.0.0 && git push origin v1.0.0`) and `.github/workflows/release.yml` builds and
+uploads Android (Google Play, internal track) and iOS (TestFlight). Secrets and one-time store
+setup: [docs/RELEASE_SECRETS.md](docs/RELEASE_SECRETS.md).

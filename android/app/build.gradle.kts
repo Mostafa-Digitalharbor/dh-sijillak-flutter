@@ -17,7 +17,7 @@ if (hasReleaseKeystore) {
 }
 
 android {
-    namespace = "sa.com.digitalharbor.sijilak"
+    namespace = "net.digitalharbor.sijillak"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -27,9 +27,9 @@ android {
     }
 
     defaultConfig {
-        // Proposed id, matching the other sa.com.digitalharbor.* apps. Must also match
+        // Digital Harbor convention net.digitalharbor.<app>. Must also match
         // iOS PRODUCT_BUNDLE_IDENTIFIER. Cannot change after the first store upload.
-        applicationId = "sa.com.digitalharbor.sijilak"
+        applicationId = "net.digitalharbor.sijillak"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

@@ -395,7 +395,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sa.com.digitalharbor.sijilak.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.digitalharbor.sijillak.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sijilak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sijilak";
@@ -409,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sa.com.digitalharbor.sijilak.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.digitalharbor.sijillak.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sijilak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sijilak";
@@ -423,7 +423,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sa.com.digitalharbor.sijilak.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.digitalharbor.sijillak.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sijilak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sijilak";
